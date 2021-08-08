@@ -1,0 +1,95 @@
+technology name,type
+Javascript,programming language
+HTML,programming language
+CSS,programming language
+SQL,programming language
+Python,programming language
+Java,programming language
+Bash,programming language
+Shell,programming language
+PowerShell,programming language
+C,programming language
+R,programming language
+C#,programming language
+PHP,programming language
+Typescript,programming language
+C++,programming language
+Kotlin,programming language
+Ruby,programming language
+Assembly,programming language
+VBA,programming language
+Swift,programming language
+Rust,programming language
+Objective-C,programming language
+Dart,programming language
+Scala,programming language
+Perl,programming language
+Haskell,programming language
+Julia,programming language
+jQuery,framework
+react.js,framework
+angular,framework
+asp.net,framework
+express,framework
+asp.net core,framework
+vue.js,framework
+spring,framework
+angular.js,framework
+django,framework
+flask,framework
+laravel,framework
+ruby on rails,framework
+symfony,framework
+gatsby,framework
+drupal,framework
+node.js,framework
+.net,framework
+.net core,framework
+pandas,framework
+tensorflow,framework
+react native,framework
+unity 3d,framework
+ansible,framework
+flutter,framework
+teraform,framework
+keras,framework
+cordova,framework
+xamarin,framework
+apache spark,framework
+torch,framework
+pytorch,framework
+hadoop,framework
+unreal engine,framework
+puppet,framework
+chef,framework
+mysql,database
+postgreSQL,database
+microsoft sql server,database
+sqlite,database
+mongodb,database
+redis,database
+mariadb,database
+oracle,database
+firebase,database
+elasticsearch,database
+dynamodb,database
+cassandra,database
+imb db2,database
+couchbase,database
+linux,platform
+windows,platform
+docker,platform
+aws,platform
+android,platform
+macos,platform
+rasberry pi,platform
+microsoft azure,platform
+wordpress,platform
+google cloud platform,platform
+ios,platform
+kubernetes,platform
+heroku,platform
+arduino,platform
+slack,platform
+ibm cloud,platform
+watson,platform
