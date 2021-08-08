@@ -1,0 +1,26 @@
+[
+  {
+    "text": "I want to book movie ticket.",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "ask_guideline",
+      "confidence": 0.9990488886833191
+    }
+  },
+  {
+    "text": "1 + 1",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "view_course_detail",
+      "confidence": 0.9991503953933716
+    }
+  },
+  {
+    "text": "y",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.4937434792518616
+    }
+  }
+]

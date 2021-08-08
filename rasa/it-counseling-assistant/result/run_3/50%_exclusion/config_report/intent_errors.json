@@ -1,0 +1,50 @@
+[
+  {
+    "text": "Should I learn web development?",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "ask_guideline",
+      "confidence": 0.9999958872795105
+    }
+  },
+  {
+    "text": "1 + 1",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "view_course_detail",
+      "confidence": 0.9993597865104675
+    }
+  },
+  {
+    "text": "that sounds good",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.9956735372543335
+    }
+  },
+  {
+    "text": "good afternoon",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.8653629422187805
+    }
+  },
+  {
+    "text": "good evening",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.9215713143348694
+    }
+  },
+  {
+    "text": "good morning",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.9912090301513672
+    }
+  }
+]

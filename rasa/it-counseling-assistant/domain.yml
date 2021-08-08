@@ -1,0 +1,105 @@
+version: '2.0'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- affirm
+- open_login_page:
+    use_entities: []
+- greetWithName
+- goodbye
+- greet
+- ask_guideline
+- update_user_skills
+- open_user_skill_page
+- view_course_detail
+- open_chatbot_survey
+- deny
+- login_verify
+- bot_challenge
+- nlu_fallback
+- out_of_scope
+entities:
+- career_position
+- duration
+- job_tiltle
+- main_career
+- time
+- token
+- user_id
+- user_name
+- platform
+slots:
+  token:
+    type: text
+    auto_fill: false
+    influence_conversation: false
+  job_role:
+    type: text
+    influence_conversation: false
+  main_career:
+    type: text
+    influence_conversation: true
+  user_name:
+    type: text
+    initial_value: Cường
+    influence_conversation: false
+  user_id:
+    type: text
+    initial_value: USER001
+    influence_conversation: false
+  learning_path_id:
+    type: text
+    influence_conversation: false
+  duration:
+    type: any
+    influence_conversation: false
+  time:
+    type: any
+    influence_conversation: false
+  duration_unit:
+    type: any
+    influence_conversation: false
+  user_skill:
+    type: any
+    influence_conversation: false
+responses:
+  utter_goodbye:
+  - text: Thank you. See you again. Please completing this survey to help us improve the chatbot performance.
+    buttons:
+    - title: Chatbot survey
+      payload: /open_chatbot_survey
+  utter_iamabot:
+  - text: |
+      Hi {user_name}. 
+      I am a career counseling bot powered by RASA. 
+      I can help you find the best career path for your career development. 
+      Before explore your career, you should login in [here](https://itcareercounseling.azurewebsites.net/login/ui).
+  utter_out_of_scope:
+  - text: |
+      That sounds interesting, but that's not a skill I've learned yet. Here's what you can ask me: 
+      - How to become a data scientist? 
+      - Which courses to learn Python?
+  utter_rephrase:
+  - text: I'm sorry, I didn't quite understand that. Could you rephrase?
+  utter_confirm_skill:
+  - text: |
+      Do you want to add new skills?
+actions:
+- action_career_question_handler
+- action_confirm_skill
+- action_find_career_path
+- action_greeting
+- action_greeting_with_name
+- action_handle_update_user_skill
+- action_open_chatbot_survey
+- action_open_login_page
+- action_open_register_page
+- action_open_user_skill_page
+- action_provide_course
+- action_provide_skills
+- action_require_select_courses
+- action_verify_login
+- action_view_course_detail
+- utter_goodbye
+- utter_iamabot

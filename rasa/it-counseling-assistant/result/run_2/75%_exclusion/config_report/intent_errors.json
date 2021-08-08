@@ -1,0 +1,58 @@
+[
+  {
+    "text": "I want to book movie ticket.",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "ask_guideline",
+      "confidence": 0.9981726408004761
+    }
+  },
+  {
+    "text": "1 + 1",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "view_course_detail",
+      "confidence": 0.9995259046554565
+    }
+  },
+  {
+    "text": "indeed",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "ask_guideline",
+      "confidence": 0.9291946887969971
+    }
+  },
+  {
+    "text": "y",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.9417513608932495
+    }
+  },
+  {
+    "text": "moin",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "view_course_detail",
+      "confidence": 0.3571176826953888
+    }
+  },
+  {
+    "text": "see you around",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "ask_guideline",
+      "confidence": 0.655245304107666
+    }
+  },
+  {
+    "text": "cee you later",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "view_course_detail",
+      "confidence": 0.48580485582351685
+    }
+  }
+]

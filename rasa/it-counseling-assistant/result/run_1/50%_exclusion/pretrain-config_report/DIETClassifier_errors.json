@@ -1,0 +1,378 @@
+[
+  {
+    "text": "Which the best school to learn data science?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "main_career",
+        "start": 31,
+        "end": 43,
+        "confidence_entity": 0.5532242655754089,
+        "value": "data science",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "What is business analysis?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "main_career",
+        "start": 17,
+        "end": 25,
+        "confidence_entity": 0.7740558385848999,
+        "value": "analysis",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Show me about course 3.",
+    "entities": [
+      {
+        "start": 14,
+        "end": 22,
+        "value": "course 3",
+        "entity": "course"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "course",
+        "start": 14,
+        "end": 20,
+        "confidence_entity": 0.8731527328491211,
+        "value": "course",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "How can a physics graduate student, with no previous experience in data analysis and visualization, become an expert data scientist?",
+    "entities": [
+      {
+        "start": 117,
+        "end": 131,
+        "value": "data scientist",
+        "entity": "main_career"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "main_career",
+        "start": 67,
+        "end": 80,
+        "confidence_entity": 0.5567851662635803,
+        "value": "data analysis",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "main_career",
+        "start": 117,
+        "end": 131,
+        "confidence_entity": 0.9769728183746338,
+        "value": "data scientist",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "How can I become a full-stack web developer?",
+    "entities": [
+      {
+        "start": 19,
+        "end": 29,
+        "value": "full-stack",
+        "entity": "career_position"
+      },
+      {
+        "start": 30,
+        "end": 43,
+        "value": "web developer",
+        "entity": "main_career"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "career_position",
+        "start": 19,
+        "end": 29,
+        "confidence_entity": 0.654754102230072,
+        "value": "full-stack",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "platform",
+        "start": 30,
+        "end": 33,
+        "confidence_entity": 0.9777387976646423,
+        "value": "web",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "main_career",
+        "start": 34,
+        "end": 43,
+        "confidence_entity": 0.9938127994537354,
+        "value": "developer",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "How can I become a data scientist in a leading tech firm doing cutting-edge data science work?",
+    "entities": [
+      {
+        "start": 19,
+        "end": 33,
+        "value": "data scientist",
+        "entity": "main_career"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "main_career",
+        "start": 19,
+        "end": 33,
+        "confidence_entity": 0.9872526526451111,
+        "value": "data scientist",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "main_career",
+        "start": 76,
+        "end": 80,
+        "confidence_entity": 0.9768784046173096,
+        "value": "data",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "How do I learn and become an expert iOS developer?",
+    "entities": [
+      {
+        "start": 36,
+        "end": 39,
+        "value": "iOS",
+        "entity": "platform"
+      },
+      {
+        "start": 40,
+        "end": 49,
+        "value": "developer",
+        "entity": "main_career"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "main_career",
+        "start": 40,
+        "end": 49,
+        "confidence_entity": 0.9915067553520203,
+        "value": "developer",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "How can I learn about WordPress for web development?",
+    "entities": [
+      {
+        "start": 36,
+        "end": 39,
+        "value": "web",
+        "entity": "platform"
+      },
+      {
+        "start": 40,
+        "end": 51,
+        "value": "development",
+        "entity": "main_career"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "platform",
+        "start": 36,
+        "end": 39,
+        "confidence_entity": 0.9774587750434875,
+        "value": "web",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Can someone without a computer science background become a data analyst?",
+    "entities": [
+      {
+        "start": 59,
+        "end": 71,
+        "value": "data analyst",
+        "entity": "main_career"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "main_career",
+        "start": 31,
+        "end": 38,
+        "confidence_entity": 0.5025724172592163,
+        "value": "science",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "main_career",
+        "start": 59,
+        "end": 71,
+        "confidence_entity": 0.9831619262695312,
+        "value": "data analyst",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I want to become a data engineer in 2020.",
+    "entities": [
+      {
+        "start": 19,
+        "end": 32,
+        "value": "data engineer",
+        "entity": "main_career"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "main_career",
+        "start": 19,
+        "end": 23,
+        "confidence_entity": 0.9875447750091553,
+        "value": "data",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "How do I go about becoming a data analyst and eventually a sports analyst, thereafter?",
+    "entities": [
+      {
+        "start": 29,
+        "end": 41,
+        "value": "data analyst",
+        "entity": "main_career"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "main_career",
+        "start": 29,
+        "end": 41,
+        "confidence_entity": 0.7285934090614319,
+        "value": "data analyst",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "main_career",
+        "start": 66,
+        "end": 73,
+        "confidence_entity": 0.997437596321106,
+        "value": "analyst",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "How can I become good at data science by learning on my own?",
+    "entities": [
+      {
+        "start": 25,
+        "end": 37,
+        "value": "data science",
+        "entity": "main_career"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "main_career",
+        "start": 25,
+        "end": 29,
+        "confidence_entity": 0.7395843267440796,
+        "value": "data",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "How can a Java developer become a data scientist?",
+    "entities": [
+      {
+        "start": 34,
+        "end": 48,
+        "value": "data scientist",
+        "entity": "main_career"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "main_career",
+        "start": 15,
+        "end": 24,
+        "confidence_entity": 0.9876392483711243,
+        "value": "developer",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "main_career",
+        "start": 34,
+        "end": 48,
+        "confidence_entity": 0.9872417449951172,
+        "value": "data scientist",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "How do I become an Android developer within 3 months (online course)?",
+    "entities": [
+      {
+        "start": 19,
+        "end": 26,
+        "value": "Android",
+        "entity": "platform"
+      },
+      {
+        "start": 27,
+        "end": 36,
+        "value": "developer",
+        "entity": "main_career"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "platform",
+        "start": 19,
+        "end": 26,
+        "confidence_entity": 0.9970768690109253,
+        "value": "Android",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "main_career",
+        "start": 27,
+        "end": 36,
+        "confidence_entity": 0.992676317691803,
+        "value": "developer",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "course",
+        "start": 61,
+        "end": 67,
+        "confidence_entity": 0.792371392250061,
+        "value": "course",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

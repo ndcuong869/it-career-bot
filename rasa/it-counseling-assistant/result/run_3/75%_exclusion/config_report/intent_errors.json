@@ -1,0 +1,58 @@
+[
+  {
+    "text": "Should I learn web development?",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "ask_guideline",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "1 + 1",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "view_course_detail",
+      "confidence": 0.9996166229248047
+    }
+  },
+  {
+    "text": "I haven't learnt any courses",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "ask_guideline",
+      "confidence": 0.9995531439781189
+    }
+  },
+  {
+    "text": "that sounds good",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.8022570013999939
+    }
+  },
+  {
+    "text": "I want to view detail of course 5",
+    "intent": "view_course_detail",
+    "intent_prediction": {
+      "name": "ask_guideline",
+      "confidence": 0.6134459376335144
+    }
+  },
+  {
+    "text": "good afternoon",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "ask_guideline",
+      "confidence": 0.49724000692367554
+    }
+  },
+  {
+    "text": "goodbye",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.6249458193778992
+    }
+  }
+]

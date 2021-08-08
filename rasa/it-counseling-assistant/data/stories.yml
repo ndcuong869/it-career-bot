@@ -1,0 +1,159 @@
+version: "2.0"
+stories:
+- story: normal flow
+  steps:
+  - intent: greet
+  - action: action_greeting
+  - intent: open_login_page
+  - action: action_open_login_page
+  - intent: greetWithName
+    entities:
+    - user_id: USER001
+    - user_name: Cuong
+  - slot_was_set:
+    - user_name: Cuong
+  - slot_was_set:
+    - user_id: USER001
+  - action: action_greeting_with_name
+  - intent: ask_guideline
+    entities:
+    - main_career: data scientist
+    - duration: 6
+  - slot_was_set:
+    - main_career: data scientist
+  - slot_was_set:
+    - duration: 6
+  - action: action_career_question_handler
+  - slot_was_set:
+    - job_role: data scientist
+  - slot_was_set:
+    - duration_unit: month
+  - intent: affirm
+  - action: action_find_career_path
+  - slot_was_set:
+    - learning_path_id: LEARNING_PATH_015
+  - intent: view_course_detail
+    entities:
+    - course: course 1
+  - action: action_view_course_detail
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: action_greeting
+  - intent: open_login_page
+  - action: action_open_login_page
+  - intent: greetWithName
+    entities:
+    - user_id: USER001
+    - user_name: CUONG
+  - slot_was_set:
+    - user_name: CUONG
+  - slot_was_set:
+    - user_id: USER001
+  - action: action_greeting_with_name
+  - intent: ask_guideline
+    entities:
+    - main_career: data scientist
+    - duration: 6
+  - slot_was_set:
+    - main_career: data scientist
+  - slot_was_set:
+    - duration: 6
+  - action: action_career_question_handler
+  - slot_was_set:
+    - job_role: data scientist
+  - slot_was_set:
+    - duration_unit: month
+  - intent: open_user_skill_page
+  - action: action_open_user_skill_page
+  - intent: update_user_skills
+  - action: action_handle_update_user_skill
+  - intent: affirm
+  - action: action_find_career_path
+  - slot_was_set:
+    - learning_path_id: LEARNING_PATH_009
+  - intent: view_course_detail
+    entities:
+    - course: course 4
+  - action: action_view_course_detail
+  - intent: view_course_detail
+    entities:
+    - course: course 1
+  - action: action_view_course_detail
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: action_greeting
+  - intent: open_login_page
+  - action: action_open_login_page
+  - intent: greetWithName
+    entities:
+    - user_id: USER002
+  - slot_was_set:
+    - user_id: USER002
+  - action: action_greeting_with_name
+  - intent: ask_guideline
+    entities:
+    - main_career: data scientist
+    - duration: 6
+  - slot_was_set:
+    - main_career: data scientist
+  - slot_was_set:
+    - duration: 6
+  - action: action_career_question_handler
+  - slot_was_set:
+    - job_role: data scientist
+  - slot_was_set:
+    - duration_unit: month
+  - slot_was_set:
+    - user_skill:
+      - skill_id: SKILL011
+        skill_name: IBM Cognos Analytics
+      - skill_id: SKILL015
+        skill_name: Data Structure
+  - intent: open_user_skill_page
+  - action: action_open_user_skill_page
+  - intent: update_user_skills
+  - action: action_handle_update_user_skill
+  - intent: affirm
+  - action: action_find_career_path
+  - slot_was_set:
+    - learning_path_id: LEARNING_PATH_009
+
+- story: interactive_story_1
+  steps:
+  - intent: greetWithName
+    entities:
+    - user_id: USER001
+  - slot_was_set:
+    - user_id: USER001
+  - action: action_greeting_with_name
+  - intent: ask_guideline
+    entities:
+    - main_career: developer
+    - career_position: front end
+    - career_position: front end
+    - main_career: developer
+  - slot_was_set:
+    - main_career: developer
+  - action: action_career_question_handler
+  - slot_was_set:
+    - job_role: front end  developer
+  - slot_was_set:
+    - duration_unit: null
+  - slot_was_set:
+    - user_skill:
+      - skill_id: SKILL001
+        skill_name: Bayesian Probability
+      - skill_id: SKILL002
+        skill_name: Probability Theory
+  - intent: affirm
+  - action: action_find_career_path
+  - intent: goodbye
+  - action: utter_goodbye

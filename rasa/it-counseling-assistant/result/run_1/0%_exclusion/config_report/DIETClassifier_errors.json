@@ -1,0 +1,218 @@
+[
+  {
+    "text": "Which the best school to learn data science?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "main_career",
+        "start": 31,
+        "end": 43,
+        "confidence_entity": 0.9980727434158325,
+        "value": "data science",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "How can a physics graduate student, with no previous experience in data analysis and visualization, become an expert data scientist?",
+    "entities": [
+      {
+        "start": 117,
+        "end": 131,
+        "value": "data scientist",
+        "entity": "main_career"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "main_career",
+        "start": 67,
+        "end": 71,
+        "confidence_entity": 0.970146656036377,
+        "value": "data",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "main_career",
+        "start": 117,
+        "end": 131,
+        "confidence_entity": 0.9458918571472168,
+        "value": "data scientist",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "How can I become a full-stack web developer?",
+    "entities": [
+      {
+        "start": 19,
+        "end": 29,
+        "value": "full-stack",
+        "entity": "career_position"
+      },
+      {
+        "start": 30,
+        "end": 43,
+        "value": "web developer",
+        "entity": "main_career"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "career_position",
+        "start": 19,
+        "end": 29,
+        "confidence_entity": 0.9979941844940186,
+        "value": "full-stack",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "platform",
+        "start": 30,
+        "end": 33,
+        "confidence_entity": 0.9993910789489746,
+        "value": "web",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "main_career",
+        "start": 34,
+        "end": 43,
+        "confidence_entity": 0.9984898567199707,
+        "value": "developer",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "How can I become a data scientist in a leading tech firm doing cutting-edge data science work?",
+    "entities": [
+      {
+        "start": 19,
+        "end": 33,
+        "value": "data scientist",
+        "entity": "main_career"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "main_career",
+        "start": 19,
+        "end": 33,
+        "confidence_entity": 0.9994162321090698,
+        "value": "data scientist",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "main_career",
+        "start": 76,
+        "end": 80,
+        "confidence_entity": 0.9989362359046936,
+        "value": "data",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "How do I go about becoming a data analyst and eventually a sports analyst, thereafter?",
+    "entities": [
+      {
+        "start": 29,
+        "end": 41,
+        "value": "data analyst",
+        "entity": "main_career"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "main_career",
+        "start": 29,
+        "end": 41,
+        "confidence_entity": 0.9994301199913025,
+        "value": "data analyst",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "main_career",
+        "start": 66,
+        "end": 73,
+        "confidence_entity": 0.9995251893997192,
+        "value": "analyst",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "How should an electronics engineer with a background in statistics and pattern recognition (from grad school about 5 years ago) go about becoming a data scientist?",
+    "entities": [
+      {
+        "start": 148,
+        "end": 162,
+        "value": "data scientist",
+        "entity": "main_career"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "career_position",
+        "start": 56,
+        "end": 66,
+        "confidence_entity": 0.5745233297348022,
+        "value": "statistics",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "main_career",
+        "start": 148,
+        "end": 162,
+        "confidence_entity": 0.9972952008247375,
+        "value": "data scientist",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "How do I become an Android developer within 3 months (online course)?",
+    "entities": [
+      {
+        "start": 19,
+        "end": 26,
+        "value": "Android",
+        "entity": "platform"
+      },
+      {
+        "start": 27,
+        "end": 36,
+        "value": "developer",
+        "entity": "main_career"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "platform",
+        "start": 19,
+        "end": 26,
+        "confidence_entity": 0.9997125267982483,
+        "value": "Android",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "main_career",
+        "start": 27,
+        "end": 36,
+        "confidence_entity": 0.992173433303833,
+        "value": "developer",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "course",
+        "start": 61,
+        "end": 67,
+        "confidence_entity": 0.9731881022453308,
+        "value": "course",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

@@ -1,0 +1,139 @@
+[
+  {
+    "text": "1 + 1",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "course",
+        "start": 0,
+        "end": 1,
+        "confidence_entity": 0.9062545299530029,
+        "value": "1",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "course",
+        "start": 4,
+        "end": 5,
+        "confidence_entity": 0.9955335855484009,
+        "value": "1",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "What would it take for mechanical engineers to become data analysts?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "main_career",
+        "start": 54,
+        "end": 67,
+        "confidence_entity": 0.9962258338928223,
+        "value": "data analysts",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "How are the chances of becoming a data analyst for a 7-year experienced Indian public sector bank manager with certification in data science using Python?",
+    "entities": [
+      {
+        "start": 34,
+        "end": 46,
+        "value": "data analyst",
+        "entity": "main_career"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "main_career",
+        "start": 34,
+        "end": 46,
+        "confidence_entity": 0.996921956539154,
+        "value": "data analyst",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "main_career",
+        "start": 128,
+        "end": 132,
+        "confidence_entity": 0.9939302206039429,
+        "value": "data",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "How can I become a data scientist in a leading tech firm doing cutting-edge data science work?",
+    "entities": [
+      {
+        "start": 19,
+        "end": 33,
+        "value": "data scientist",
+        "entity": "main_career"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "main_career",
+        "start": 19,
+        "end": 33,
+        "confidence_entity": 0.9973377585411072,
+        "value": "data scientist",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "main_career",
+        "start": 76,
+        "end": 80,
+        "confidence_entity": 0.9963046312332153,
+        "value": "data",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Can I become a web developer at 30 years old?",
+    "entities": [
+      {
+        "start": 15,
+        "end": 18,
+        "value": "web",
+        "entity": "platform"
+      },
+      {
+        "start": 19,
+        "end": 28,
+        "value": "developer",
+        "entity": "main_career"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "platform",
+        "start": 15,
+        "end": 18,
+        "confidence_entity": 0.9807726144790649,
+        "value": "web",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "main_career",
+        "start": 19,
+        "end": 28,
+        "confidence_entity": 0.9890111684799194,
+        "value": "developer",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "main_career",
+        "start": 41,
+        "end": 44,
+        "confidence_entity": 0.5290222764015198,
+        "value": "old",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

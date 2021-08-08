@@ -1,0 +1,309 @@
+[
+  {
+    "text": "1 + 1",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "course",
+        "start": 4,
+        "end": 5,
+        "confidence_entity": 0.8492804765701294,
+        "value": "1",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "How do I become an Android developer in 2018?",
+    "entities": [
+      {
+        "start": 19,
+        "end": 26,
+        "value": "Android",
+        "entity": "platform"
+      },
+      {
+        "start": 27,
+        "end": 36,
+        "value": "developer",
+        "entity": "main_career"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "platform",
+        "start": 19,
+        "end": 26,
+        "confidence_entity": 0.9988129138946533,
+        "value": "Android",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "main_career",
+        "start": 27,
+        "end": 36,
+        "confidence_entity": 0.9702765941619873,
+        "value": "developer",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "course",
+        "start": 40,
+        "end": 44,
+        "confidence_entity": 0.7143317461013794,
+        "value": "2018",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "What would it take for mechanical engineers to become data analysts?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "main_career",
+        "start": 54,
+        "end": 67,
+        "confidence_entity": 0.9781423211097717,
+        "value": "data analysts",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "How can I become an expert in data science machine learning having a basic idea of C++ programming?",
+    "entities": [
+      {
+        "start": 30,
+        "end": 42,
+        "value": "data science",
+        "entity": "main_career"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "main_career",
+        "start": 30,
+        "end": 34,
+        "confidence_entity": 0.9884810447692871,
+        "value": "data",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "How do I learn and become an expert iOS developer?",
+    "entities": [
+      {
+        "start": 36,
+        "end": 39,
+        "value": "iOS",
+        "entity": "platform"
+      },
+      {
+        "start": 40,
+        "end": 49,
+        "value": "developer",
+        "entity": "main_career"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "main_career",
+        "start": 40,
+        "end": 49,
+        "confidence_entity": 0.9775661826133728,
+        "value": "developer",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "How do I become a data scientist as a software engineer?",
+    "entities": [
+      {
+        "start": 18,
+        "end": 32,
+        "value": "data scientist",
+        "entity": "main_career"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "main_career",
+        "start": 18,
+        "end": 32,
+        "confidence_entity": 0.9891455173492432,
+        "value": "data scientist",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "main_career",
+        "start": 47,
+        "end": 55,
+        "confidence_entity": 0.55449378490448,
+        "value": "engineer",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "How do I become a successful professional Android developer without any previous knowledge in programming in 2018?",
+    "entities": [
+      {
+        "start": 42,
+        "end": 49,
+        "value": "Android",
+        "entity": "platform"
+      },
+      {
+        "start": 50,
+        "end": 59,
+        "value": "developer",
+        "entity": "main_career"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "platform",
+        "start": 42,
+        "end": 49,
+        "confidence_entity": 0.9987792372703552,
+        "value": "Android",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "main_career",
+        "start": 50,
+        "end": 59,
+        "confidence_entity": 0.9774682521820068,
+        "value": "developer",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "course",
+        "start": 109,
+        "end": 113,
+        "confidence_entity": 0.6113453507423401,
+        "value": "2018",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "How are the chances of becoming a data analyst for a 7-year experienced Indian public sector bank manager with certification in data science using Python?",
+    "entities": [
+      {
+        "start": 34,
+        "end": 46,
+        "value": "data analyst",
+        "entity": "main_career"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "main_career",
+        "start": 34,
+        "end": 46,
+        "confidence_entity": 0.984790027141571,
+        "value": "data analyst",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "main_career",
+        "start": 128,
+        "end": 132,
+        "confidence_entity": 0.9505710601806641,
+        "value": "data",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I want to become a data engineer in 2020.",
+    "entities": [
+      {
+        "start": 19,
+        "end": 32,
+        "value": "data engineer",
+        "entity": "main_career"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "main_career",
+        "start": 19,
+        "end": 32,
+        "confidence_entity": 0.8208104372024536,
+        "value": "data engineer",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "course",
+        "start": 36,
+        "end": 40,
+        "confidence_entity": 0.7377669811248779,
+        "value": "2020",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "How can I become a data scientist in a leading tech firm doing cutting-edge data science work?",
+    "entities": [
+      {
+        "start": 19,
+        "end": 33,
+        "value": "data scientist",
+        "entity": "main_career"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "main_career",
+        "start": 19,
+        "end": 33,
+        "confidence_entity": 0.9897261261940002,
+        "value": "data scientist",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "main_career",
+        "start": 76,
+        "end": 80,
+        "confidence_entity": 0.9586764574050903,
+        "value": "data",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "How do I become a data scientist while working as a technical support engineer?",
+    "entities": [
+      {
+        "start": 18,
+        "end": 32,
+        "value": "data scientist",
+        "entity": "main_career"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "main_career",
+        "start": 18,
+        "end": 32,
+        "confidence_entity": 0.9885151982307434,
+        "value": "data scientist",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "main_career",
+        "start": 70,
+        "end": 78,
+        "confidence_entity": 0.5380479097366333,
+        "value": "engineer",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

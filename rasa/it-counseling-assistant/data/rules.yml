@@ -1,0 +1,63 @@
+version: "2.0"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say hello anytime the user says greeting
+  steps:
+  - intent: greet
+  - action: action_greeting
+
+- rule: Say hello with user id
+  steps:
+  - intent: greetWithName
+  - action: action_greeting_with_name
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Handle unexpected intent
+  steps:
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+
+- rule: handle unexpected input
+  steps:
+  - intent: nlu_fallback
+  - action: utter_rephrase
+
+- rule: Open login page when click button
+  steps:
+  - intent: open_login_page
+  - action: action_open_login_page
+
+- rule: Verify login information
+  steps:
+  - intent: login_verify
+  - action: action_verify_login
+
+- rule: Open chatbot survey
+  steps:
+  - intent: open_chatbot_survey
+  - action: action_open_chatbot_survey
+
+- rule: Open user skill page
+  steps:
+  - intent: open_user_skill_page
+  - action: action_open_user_skill_page
+
+- rule: Detect udpate user skill
+  steps:
+  - intent: update_user_skills
+  - action: action_handle_update_user_skill
+# - rule: Fill in form fields for career counseling
+#   steps:
+#   - intent: ask_guideline
+#   - action: career_instruction_form
+#   - active_loop: career_instruction_form

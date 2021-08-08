@@ -1,0 +1,242 @@
+[
+  {
+    "text": "1 + 1",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "course",
+        "start": 4,
+        "end": 5,
+        "confidence_entity": 0.5518209934234619,
+        "value": "1",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "What would it take for mechanical engineers to become data analysts?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "main_career",
+        "start": 54,
+        "end": 58,
+        "confidence_entity": 0.8250948190689087,
+        "value": "data",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "How can I become an expert in data science machine learning having a basic idea of C++ programming?",
+    "entities": [
+      {
+        "start": 30,
+        "end": 42,
+        "value": "data science",
+        "entity": "main_career"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "main_career",
+        "start": 30,
+        "end": 34,
+        "confidence_entity": 0.9682416915893555,
+        "value": "data",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "How can we become a data scientist in India?",
+    "entities": [
+      {
+        "start": 20,
+        "end": 34,
+        "value": "data scientist",
+        "entity": "main_career"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "platform",
+        "start": 8,
+        "end": 10,
+        "confidence_entity": 0.5446856021881104,
+        "value": "we",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "main_career",
+        "start": 20,
+        "end": 34,
+        "confidence_entity": 0.9694255590438843,
+        "value": "data scientist",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "How are the chances of becoming a data analyst for a 7-year experienced Indian public sector bank manager with certification in data science using Python?",
+    "entities": [
+      {
+        "start": 34,
+        "end": 46,
+        "value": "data analyst",
+        "entity": "main_career"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "main_career",
+        "start": 34,
+        "end": 46,
+        "confidence_entity": 0.9735705256462097,
+        "value": "data analyst",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "main_career",
+        "start": 128,
+        "end": 132,
+        "confidence_entity": 0.9670003056526184,
+        "value": "data",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I want to become a data engineer in 2020.",
+    "entities": [
+      {
+        "start": 19,
+        "end": 32,
+        "value": "data engineer",
+        "entity": "main_career"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "main_career",
+        "start": 19,
+        "end": 23,
+        "confidence_entity": 0.9790337681770325,
+        "value": "data",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "How can I become a data scientist in a leading tech firm doing cutting-edge data science work?",
+    "entities": [
+      {
+        "start": 19,
+        "end": 33,
+        "value": "data scientist",
+        "entity": "main_career"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "main_career",
+        "start": 19,
+        "end": 33,
+        "confidence_entity": 0.9748474359512329,
+        "value": "data scientist",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "main_career",
+        "start": 76,
+        "end": 80,
+        "confidence_entity": 0.9606149196624756,
+        "value": "data",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "How do I become a back-end developer as a woman?",
+    "entities": [
+      {
+        "start": 18,
+        "end": 26,
+        "value": "back-end",
+        "entity": "career_position"
+      },
+      {
+        "start": 27,
+        "end": 36,
+        "value": "developer",
+        "entity": "main_career"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "main_career",
+        "start": 27,
+        "end": 36,
+        "confidence_entity": 0.9805117249488831,
+        "value": "developer",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "How do I become a data engineer in Pakistan?",
+    "entities": [
+      {
+        "start": 18,
+        "end": 31,
+        "value": "data engineer",
+        "entity": "main_career"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "main_career",
+        "start": 18,
+        "end": 22,
+        "confidence_entity": 0.9711687564849854,
+        "value": "data",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "How long will it take to become a junior front end developer?",
+    "entities": [
+      {
+        "start": 41,
+        "end": 50,
+        "value": "front end",
+        "entity": "career_position"
+      },
+      {
+        "start": 51,
+        "end": 60,
+        "value": "developer",
+        "entity": "main_career"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "career_position",
+        "start": 41,
+        "end": 46,
+        "confidence_entity": 0.5342772006988525,
+        "value": "front",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "main_career",
+        "start": 51,
+        "end": 60,
+        "confidence_entity": 0.981124997138977,
+        "value": "developer",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

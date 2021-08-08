@@ -1,0 +1,72 @@
+{
+  "goodbye": {
+    "precision": 0.75,
+    "recall": 0.75,
+    "f1-score": 0.75,
+    "support": 4,
+    "confused_with": {
+      "ask_guideline": 1
+    }
+  },
+  "greet": {
+    "precision": 1.0,
+    "recall": 0.3333333333333333,
+    "f1-score": 0.5,
+    "support": 3,
+    "confused_with": {
+      "ask_guideline": 2
+    }
+  },
+  "ask_guideline": {
+    "precision": 0.9074074074074074,
+    "recall": 1.0,
+    "f1-score": 0.9514563106796117,
+    "support": 49,
+    "confused_with": {}
+  },
+  "out_of_scope": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 2,
+    "confused_with": {
+      "ask_guideline": 2
+    }
+  },
+  "affirm": {
+    "precision": 1.0,
+    "recall": 0.5,
+    "f1-score": 0.6666666666666666,
+    "support": 2,
+    "confused_with": {
+      "goodbye": 1
+    }
+  },
+  "view_course_detail": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 2,
+    "confused_with": {}
+  },
+  "deny": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1,
+    "confused_with": {}
+  },
+  "accuracy": 0.9047619047619048,
+  "macro avg": {
+    "precision": 0.8082010582010583,
+    "recall": 0.6547619047619048,
+    "f1-score": 0.6954461396208969,
+    "support": 63
+  },
+  "weighted avg": {
+    "precision": 0.8803644914756026,
+    "recall": 0.9047619047619048,
+    "f1-score": 0.8802332151846716,
+    "support": 63
+  }
+}

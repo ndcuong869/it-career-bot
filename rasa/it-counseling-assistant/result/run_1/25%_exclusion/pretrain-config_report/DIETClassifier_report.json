@@ -1,0 +1,50 @@
+{
+  "career_position": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 38,
+    "confused_with": {}
+  },
+  "platform": {
+    "precision": 0.9444444444444444,
+    "recall": 1.0,
+    "f1-score": 0.9714285714285714,
+    "support": 17,
+    "confused_with": {}
+  },
+  "course": {
+    "precision": 0.5714285714285714,
+    "recall": 1.0,
+    "f1-score": 0.7272727272727273,
+    "support": 4,
+    "confused_with": {}
+  },
+  "main_career": {
+    "precision": 0.9295774647887324,
+    "recall": 0.9295774647887324,
+    "f1-score": 0.9295774647887324,
+    "support": 71,
+    "confused_with": {
+      "platform": 1
+    }
+  },
+  "micro avg": {
+    "precision": 0.9328358208955224,
+    "recall": 0.9615384615384616,
+    "f1-score": 0.946969696969697,
+    "support": 130
+  },
+  "macro avg": {
+    "precision": 0.8613626201654371,
+    "recall": 0.9823943661971831,
+    "f1-score": 0.9070696908725079,
+    "support": 130
+  },
+  "weighted avg": {
+    "precision": 0.9410866910866912,
+    "recall": 0.9615384615384616,
+    "f1-score": 0.9494105894105893,
+    "support": 130
+  }
+}

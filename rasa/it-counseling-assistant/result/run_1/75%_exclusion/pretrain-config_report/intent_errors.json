@@ -1,0 +1,34 @@
+[
+  {
+    "text": "Which the best school to learn data science?",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "ask_guideline",
+      "confidence": 0.9999961853027344
+    }
+  },
+  {
+    "text": "What is business analysis?",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "ask_guideline",
+      "confidence": 0.999998152256012
+    }
+  },
+  {
+    "text": "that sounds good",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "ask_guideline",
+      "confidence": 0.928117573261261
+    }
+  },
+  {
+    "text": "have a nice day",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "ask_guideline",
+      "confidence": 0.9641396403312683
+    }
+  }
+]

@@ -1,0 +1,68 @@
+{
+  "goodbye": {
+    "precision": 0.6666666666666666,
+    "recall": 1.0,
+    "f1-score": 0.8,
+    "support": 4,
+    "confused_with": {}
+  },
+  "greet": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 3,
+    "confused_with": {}
+  },
+  "ask_guideline": {
+    "precision": 0.9607843137254902,
+    "recall": 1.0,
+    "f1-score": 0.98,
+    "support": 49,
+    "confused_with": {}
+  },
+  "out_of_scope": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 2,
+    "confused_with": {
+      "ask_guideline": 2
+    }
+  },
+  "affirm": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 2,
+    "confused_with": {
+      "goodbye": 2
+    }
+  },
+  "view_course_detail": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 2,
+    "confused_with": {}
+  },
+  "deny": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1,
+    "confused_with": {}
+  },
+  "accuracy": 0.9365079365079365,
+  "macro avg": {
+    "precision": 0.6610644257703081,
+    "recall": 0.7142857142857143,
+    "f1-score": 0.6828571428571429,
+    "support": 63
+  },
+  "weighted avg": {
+    "precision": 0.8848428260192965,
+    "recall": 0.9365079365079365,
+    "f1-score": 0.9082539682539682,
+    "support": 63
+  }
+}

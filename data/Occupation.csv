@@ -1,4 +1,0 @@
-occupation_id,occupation_name,require_skill
-OCCUPATION001,Data analyst,"SKILL001,SKILL002,SKILL003"
-OCCUPATION002,Data scientist,"SKILL003,SKILL004,SKILL005"
-OCCUPATION003,Front end developer,"SKILL126,SKILL129,SKILL130"

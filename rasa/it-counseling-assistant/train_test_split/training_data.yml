@@ -1,0 +1,220 @@
+version: "2.0"
+nlu:
+- intent: out_of_scope
+  examples: |
+    - 1 + 1
+    - I want to book movie ticket.
+- intent: deny
+  examples: |
+    - I haven't enrolled any courses
+    - I haven't learnt any courses
+    - I have no knowledge
+    - I have no experience
+    - I haven't learnt anything.
+    - no
+- intent: affirm
+  examples: |
+    - sure
+    - y
+    - indeed
+    - yes
+    - Yes
+    - Sure
+    - of course
+- intent: view_course_detail
+  examples: |
+    - Show me about [course 2](course)
+    - Show me about [course 4](course)
+    - Can you show me more about [course 2](course)?
+    - Show me more about [course 1](course)
+    - Could you show me more about [course 4](course)?
+    - I need to know more about [course 3](course).
+    - I want to view detail of [course 5](course)
+    - show more detail about [course 1](course)
+    - Show me about [course 3](course).
+- intent: greet
+  examples: |
+    - hello
+    - good afternoon
+    - hey
+    - good evening
+    - let's go
+    - hi
+    - goodevening
+    - hello there
+    - goodmorning
+    - hey there
+- intent: goodbye
+  examples: |
+    - good night
+    - good afternoon
+    - goodbye
+    - Thank you. Bye bye
+    - Thank you. Goodbye
+    - see you around
+    - Thank you. Bye bye.
+    - Thank you. Good bye.
+    - bye bye
+    - see you later
+    - No, thank you
+    - Thank you. bye bye
+    - Thank you.
+    - Thank for your help. Goodbye.
+    - cee you later
+    - cu
+- intent: ask_guideline
+  examples: |
+    - How can an IT undergrad become a [Data Scientist](main_career)?
+    - Can I become a [web](platform) [developer](main_career) at 30 years old?
+    - Can any one guide me on how to become a [web](platform) [developer](main_career)?
+    - How do I become a [data scientist](main_career) as a computer science undergrad?
+    - I am a mechanical engineer and I want to become a [data scientist](main_career) but I don't have any programming background.
+    - How can you become a [web](platform) [developer](main_career)?
+    - What online courses should one take to be industry ready or to become a good [data scientist](main_career)?
+    - How can I become a [data scientist](main_career) after doing computer science engineering?
+    - How can I become an expert in [data science](main_career) machine learning having a basic idea of C++ programming?
+    - Can I get my first [front end](career_position) [web](platform) [developer](main_career) job by learning HTML, CSS, Bootstrap, Javascript, Jquery and React)?
+    - I'm wanting to learn to become a [front end](career_position) [developer](main_career).
+    - How do I become a [data scientist](main_career)?
+    - How to become a better [web](platform) [developer](main_career)?
+    - How can an Oracle technical consultant with 5 years of experience become a [data scientist](main_career)?
+    - I would like to become a [data engineering](main_career).
+    - Can I become a [front end](career_position) [developer](main_career) and learn to use WordPress in 1 year?
+    - How do I become a good [front-end](career_position) React [developer](main_career)?
+    - What are the best recommendations for someone who is studying Information Technology Engineering and wants to become a [data scientist](main_career)?
+    - I wish to become a [data scientist](main_career).
+    - I wanted become [data analyst](main_career).
+    - How do I become a [Data scientist](main_career)?
+    - How do I become a [fullstack](career_position) [web](platform) [developer](main_career) having knowledge on .NET?
+    - How do I become a [Data Scientist](main_career)?
+    - What're things required to become a [front end](career_position) [developer](main_career)?
+    - I want to become a [full-stack](career_position) [web](platform) [developer](main_career).
+    - How do I become a [data scientist](main_career) while working as a technical support engineer?
+    - How do I become a [data scientist](main_career) expert online?
+    - How do I become a [web](platform) [developer](main_career)?
+    - How can I become a [data scientist](main_career), without any degree in data science but a degree in computer science from a tier-2 engineering college in India?
+    - What is a [data scientist](main_career)'s career path?
+    - How do I begin the path of becoming a [web](platform) [developer](main_career)?
+    - What's the best path to become a [front-end](career_position) [web](platform) [developer](main_career) without PHP?
+    - How long does it take for a beginner to become very good at [Data Science](main_career)?
+    - What is the step-by-step path to become a [data scientist](main_career)?
+    - What skills and technologies does one have to work on to become a really good [front-end](career_position) [developer](main_career)?
+    - What should I study in data science to become a [data scientist](main_career)?
+    - How can I become a [web](platform) [developer](main_career) without going online to learn?
+    - I want to know which courses should I master to become a professional [web](platform) [developer](main_career).
+    - How do I get a job as a [web](platform) [developer](main_career) in Google?
+    - How can a HR profession become a [data scientist](main_career)?
+    - How can one become an independent [Android](platform) [developer](main_career) by learning from home from scratch?.
+    - How can I become a [data scientist](main_career) from a mechanical engineer with 0 coding knowledge?
+    - How can I become a [data scientist](main_career) in Pakistan?
+    - What is a great learning path to become a [front-end](career_position) [developer](main_career)?
+    - Can someone without a computer science background become a [data analyst](main_career)?
+    - I want to become a [Front-End](career_position) [Web](platform) [Developer](main_career)?
+    - How do you become a [data scientist](main_career) without a computer science background?
+    - How do I become a [data analyst](main_career)?
+    - How can a software engineer working in Java work towards becoming a [data engineer](main_career)?
+    - I want to learn [data scientist](main_career).
+    - I would like to become a [data scientist](main_career).
+    - Where do I start and what is step by step process to become a [Data Scientist](main_career)?
+    - What is recipe of becoming a good [data scientist](main_career)?
+    - How can I become a [data analyst](main_career) from zero?
+    - How can I become a [data scientist](main_career), with a bachelor’s degree in social science.
+    - How can I become a [data scientist](main_career) after BCA?
+    - I want to become an [Android](platform) app [developer](main_career)
+    - What is the best path to become a [data scientist](main_career)?
+    - How do I become a [data scientist](main_career) in TCS?
+    - How can we become a [data scientist](main_career) in India?
+    - How long will it take to become a junior [front end](career_position) [developer](main_career)?
+    - What would it take for mechanical engineers to become data analysts?
+    - How can I become a [data scientist](main_career) in a leading tech firm doing cutting-edge data science work?
+    - How to become [front end](career_position) [web](platform) [developer](main_career)?
+    - How do I become a financial [data scientist](main_career)?
+    - How can I become good at [data science](main_career) by learning on my own?
+    - As a software engineer in Chicago, how can a become a [data scientist](main_career)?
+    - How can one become a [front-end](career_position) [web](platform) [developer](main_career) in 3 months?
+    - How do I become a good [web](platform) [developer](main_career)?
+    - How do I become a [data scientist](main_career) as a software engineer?
+    - I want to become a [data engineer](main_career) in 2020.
+    - Can a business student become a [data analyst](main_career)?
+    - What are the good ways to learn to become the best [web](platform) [developer](main_career)?
+    - How can I become a good freelancer [Android](platform) [developer](main_career)
+    - How can I become a [data scientist](main_career)?
+    - How can a fresh computer science graduate become a [data scientist](main_career)?
+    - How can I learn about WordPress for [web](platform) [development](main_career)?
+    - How should an electronics engineer with a background in statistics and pattern recognition (from grad school about 5 years ago) go about becoming a [data scientist](main_career)?
+    - How can I become a professional [front-end](career_position) [developer](main_career) if I had a basic knowledge of HTML and CSS?
+    - How did you become a good [web](platform) [developer](main_career)?
+    - Is it any chance to become a [data scientist](main_career) without having Java knowledge or coding knowledge?
+    - How can I become a [Data scientist](main_career) after getting a degree in computer science
+    - I need to learn [data scientist](main_career) within 6 months.
+    - How do I learn and become an expert [iOS](platform) [developer](main_career)?
+    - How do I become a [data scientist](main_career) within 6 months?
+    - How do I become a [front-end](career_position) [web](platform) [developer](main_career)?
+    - How to become a [data scientist](main_career)?
+    - I need to learn [data scientist](main_career) in 4 weeks.
+    - I want to become a [data scientist](main_career) within 6 months.
+    - What should I do to become a great [data scientist](main_career)?
+    - How do I become a [data scientist](main_career) in India?
+    - How can one become a good [data scientist](main_career) while studying computer engineering?
+    - How can a physics graduate student, with no previous experience in data analysis and visualization, become an expert [data scientist](main_career)?
+    - How do I become a [data engineer](main_career) at Facebook?
+    - How do I become a [data scientist](main_career) as an undergrad?
+    - Can I become a [data scientist](main_career) when I am a business manager?
+    - How did you become an [iOS](platform) [developer](main_career)?
+    - How do I become a [data scientist](main_career) as a final year computer science student?
+    - How are the chances of becoming a [data analyst](main_career) for a 7-year experienced Indian public sector bank manager with certification in data science using Python?
+    - I want to become a good [Android](platform) [developer](main_career).
+    - What should I learn to become a good [front end](career_position) [developer](main_career) ?
+    - I want to learn [data science](main_career).
+    - Can you become a [data analyst](main_career) (as a profession) even without having any knowledge in computer science?
+    - How do I become a successful self-taught [web](platform) [developer](main_career) in 2018?
+    - How can I become a [data scientist](main_career) within 3 months?
+    - How can a physics graduate student, with no previous experience in data analysis and visualization, become an expert [data analyst](main_career)?
+    - How do I go about becoming a [data analyst](main_career) and eventually a sports analyst, thereafter?
+    - How can I become a [full-stack](career_position) [web developer](main_career)?
+    - How would you go about developing a 5-year plan in order to become a good [data engineering](main_career)?
+    - How do I become a [data scientist](main_career) without doing Mtech in Compute Science?
+    - What are the steps to learn [data engineer](main_career)?
+    - What do I need to learn to become an [Android](platform) [developer](main_career)?
+    - Is it possible for a WordPress developer to become a [data scientist](main_career)?
+    - What do I need to learn in order to become a [full stack](career_position) [web](platform) [developer](main_career)?
+    - How become a [web](platform) [developer](main_career)?
+    - How do I become a good [web](platform) [developer](main_career) in 2017?
+    - How can I become a [data analyst](main_career) after having 2 years of experience as a civil engineer and 1 year as a lecturer?
+    - How do I learn [data science](main_career) without going to college?
+    - Can a data engineer become a good [data scientist](main_career)?
+    - How do I learn data science from step to step to become a [data scientist](main_career)?
+    - How can I become a [data scientist](main_career) after completing an MTech in computer science?
+    - How can a fresh computer science graduate become a [data engineer](main_career) with no relevant experience?
+    - What is some good advice for people who try to be a self-taught [web](platform) [developer](main_career)?
+    - I want to become a [front end](career_position) [developer](main_career).
+    - How can I be a good [web](platform) [developer](main_career) using ASP.NET?
+    - How did you become a [data scientist](main_career) being from an electrical engineering background?
+    - How can I become a good freelancer in [web](platform) [developer](main_career)?
+    - I am a front-end developer and I want to become a [full stack](career_position) [developer](main_career).
+    - How can I become a [front-end](career_position) [web](platform) [developer](main_career) with good basics on HTML, CSS, and JavaScript?
+    - How do I become a freelance [web](platform) [developer](main_career)?
+    - I want to become a good [back-end](career_position) [web](platform) [developer](main_career)?
+- lookup: platform
+  examples: |
+    - web
+    - android
+    - ios
+- lookup: main_career
+  examples: |
+    - data analyst
+    - data engineering
+    - data scientist
+    - data engineer
+    - developer
+- lookup: career_position
+  examples: |
+    - front end
+    - frontend
+    - front-end
+    - back end
+    - backend
+    - back-end
+    - full stack
+    - fullstack
+    - full-stack

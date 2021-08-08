@@ -1,0 +1,210 @@
+[
+  {
+    "text": "1 + 1",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "course",
+        "start": 0,
+        "end": 1,
+        "confidence_entity": 0.8676475882530212,
+        "value": "1",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "course",
+        "start": 4,
+        "end": 5,
+        "confidence_entity": 0.8667775392532349,
+        "value": "1",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "What would it take for mechanical engineers to become data analysts?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "main_career",
+        "start": 54,
+        "end": 58,
+        "confidence_entity": 0.6486284732818604,
+        "value": "data",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "How can I become an expert in data science machine learning having a basic idea of C++ programming?",
+    "entities": [
+      {
+        "start": 30,
+        "end": 42,
+        "value": "data science",
+        "entity": "main_career"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "main_career",
+        "start": 30,
+        "end": 34,
+        "confidence_entity": 0.6083516478538513,
+        "value": "data",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "How are the chances of becoming a data analyst for a 7-year experienced Indian public sector bank manager with certification in data science using Python?",
+    "entities": [
+      {
+        "start": 34,
+        "end": 46,
+        "value": "data analyst",
+        "entity": "main_career"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "main_career",
+        "start": 34,
+        "end": 46,
+        "confidence_entity": 0.6419538259506226,
+        "value": "data analyst",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "career_position",
+        "start": 54,
+        "end": 55,
+        "confidence_entity": 0.7952021360397339,
+        "value": "-",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "main_career",
+        "start": 128,
+        "end": 132,
+        "confidence_entity": 0.5588995218276978,
+        "value": "data",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I want to become a data engineer in 2020.",
+    "entities": [
+      {
+        "start": 19,
+        "end": 32,
+        "value": "data engineer",
+        "entity": "main_career"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "main_career",
+        "start": 19,
+        "end": 23,
+        "confidence_entity": 0.9845319390296936,
+        "value": "data",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "How can I become a data scientist in a leading tech firm doing cutting-edge data science work?",
+    "entities": [
+      {
+        "start": 19,
+        "end": 33,
+        "value": "data scientist",
+        "entity": "main_career"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "main_career",
+        "start": 19,
+        "end": 33,
+        "confidence_entity": 0.9809874296188354,
+        "value": "data scientist",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "career_position",
+        "start": 70,
+        "end": 71,
+        "confidence_entity": 0.7861160039901733,
+        "value": "-",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "main_career",
+        "start": 76,
+        "end": 80,
+        "confidence_entity": 0.9763289093971252,
+        "value": "data",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "How do I become a data engineer in Pakistan?",
+    "entities": [
+      {
+        "start": 18,
+        "end": 31,
+        "value": "data engineer",
+        "entity": "main_career"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "main_career",
+        "start": 18,
+        "end": 22,
+        "confidence_entity": 0.9837221503257751,
+        "value": "data",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "How can a person with no computer skills become afull stack developer?",
+    "entities": [
+      {
+        "start": 49,
+        "end": 59,
+        "value": "full stack",
+        "entity": "career_position"
+      },
+      {
+        "start": 60,
+        "end": 69,
+        "value": "developer",
+        "entity": "main_career"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "career_position",
+        "start": 54,
+        "end": 59,
+        "confidence_entity": 0.9989150762557983,
+        "value": "stack",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "main_career",
+        "start": 60,
+        "end": 69,
+        "confidence_entity": 0.9633090496063232,
+        "value": "developer",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

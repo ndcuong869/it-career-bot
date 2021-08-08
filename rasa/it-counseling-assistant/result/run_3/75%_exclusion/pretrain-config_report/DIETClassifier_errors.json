@@ -1,0 +1,642 @@
+[
+  {
+    "text": "Should I learn web development?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "platform",
+        "start": 15,
+        "end": 18,
+        "confidence_entity": 0.9482117295265198,
+        "value": "web",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "main_career",
+        "start": 19,
+        "end": 30,
+        "confidence_entity": 0.9826599955558777,
+        "value": "development",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "1 + 1",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "course",
+        "start": 0,
+        "end": 1,
+        "confidence_entity": 0.9234607815742493,
+        "value": "1",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "course",
+        "start": 4,
+        "end": 5,
+        "confidence_entity": 0.8603347539901733,
+        "value": "1",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I want to view detail of course 5",
+    "entities": [
+      {
+        "start": 25,
+        "end": 33,
+        "value": "course 5",
+        "entity": "course"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "course",
+        "start": 25,
+        "end": 31,
+        "confidence_entity": 0.9369478821754456,
+        "value": "course",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Could you show me more about course 4?",
+    "entities": [
+      {
+        "start": 29,
+        "end": 37,
+        "value": "course 4",
+        "entity": "course"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "course",
+        "start": 29,
+        "end": 35,
+        "confidence_entity": 0.9460818767547607,
+        "value": "course",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "How do I learn data science from step to step to become a data scientist?",
+    "entities": [
+      {
+        "start": 58,
+        "end": 72,
+        "value": "data scientist",
+        "entity": "main_career"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "main_career",
+        "start": 15,
+        "end": 19,
+        "confidence_entity": 0.9509227871894836,
+        "value": "data",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "main_career",
+        "start": 58,
+        "end": 72,
+        "confidence_entity": 0.9597526788711548,
+        "value": "data scientist",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "How do I learn and become an expert iOS developer?",
+    "entities": [
+      {
+        "start": 36,
+        "end": 39,
+        "value": "iOS",
+        "entity": "platform"
+      },
+      {
+        "start": 40,
+        "end": 49,
+        "value": "developer",
+        "entity": "main_career"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "main_career",
+        "start": 40,
+        "end": 49,
+        "confidence_entity": 0.9707712531089783,
+        "value": "developer",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Do you know any good programs on how to become a data science team lead?",
+    "entities": [
+      {
+        "start": 49,
+        "end": 61,
+        "value": "data science",
+        "entity": "main_career"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "main_career",
+        "start": 49,
+        "end": 53,
+        "confidence_entity": 0.9494853615760803,
+        "value": "data",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "How can I become a data scientist, without any degree in data science but a degree in computer science from a tier-2 engineering college in India?",
+    "entities": [
+      {
+        "start": 19,
+        "end": 33,
+        "value": "data scientist",
+        "entity": "main_career"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "main_career",
+        "start": 19,
+        "end": 33,
+        "confidence_entity": 0.9557384252548218,
+        "value": "data scientist",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "main_career",
+        "start": 57,
+        "end": 61,
+        "confidence_entity": 0.7622653841972351,
+        "value": "data",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "main_career",
+        "start": 117,
+        "end": 128,
+        "confidence_entity": 0.9449317455291748,
+        "value": "engineering",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "How would you go about developing a 5-year plan in order to become a good data engineering?",
+    "entities": [
+      {
+        "start": 74,
+        "end": 90,
+        "value": "data engineering",
+        "entity": "main_career"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "career_position",
+        "start": 37,
+        "end": 38,
+        "confidence_entity": 0.9970715045928955,
+        "value": "-",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "main_career",
+        "start": 74,
+        "end": 90,
+        "confidence_entity": 0.7737390398979187,
+        "value": "data engineering",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "How can I become a full-stack developer as a systems engineer who loves the magic of web apps?",
+    "entities": [
+      {
+        "start": 19,
+        "end": 29,
+        "value": "full-stack",
+        "entity": "career_position"
+      },
+      {
+        "start": 30,
+        "end": 39,
+        "value": "developer",
+        "entity": "main_career"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "career_position",
+        "start": 19,
+        "end": 29,
+        "confidence_entity": 0.9624696373939514,
+        "value": "full-stack",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "main_career",
+        "start": 30,
+        "end": 39,
+        "confidence_entity": 0.9422193169593811,
+        "value": "developer",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "main_career",
+        "start": 53,
+        "end": 61,
+        "confidence_entity": 0.9957438111305237,
+        "value": "engineer",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "platform",
+        "start": 85,
+        "end": 88,
+        "confidence_entity": 0.9484837055206299,
+        "value": "web",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I want to become a good back-end web developer?",
+    "entities": [
+      {
+        "start": 24,
+        "end": 32,
+        "value": "back-end",
+        "entity": "career_position"
+      },
+      {
+        "start": 33,
+        "end": 36,
+        "value": "web",
+        "entity": "platform"
+      },
+      {
+        "start": 37,
+        "end": 46,
+        "value": "developer",
+        "entity": "main_career"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "career_position",
+        "start": 28,
+        "end": 32,
+        "confidence_entity": 0.9976130723953247,
+        "value": "-end",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "platform",
+        "start": 33,
+        "end": 36,
+        "confidence_entity": 0.9342599511146545,
+        "value": "web",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "main_career",
+        "start": 37,
+        "end": 46,
+        "confidence_entity": 0.9614598155021667,
+        "value": "developer",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "How can I become a data scientist from a mechanical engineer with 0 coding knowledge?",
+    "entities": [
+      {
+        "start": 19,
+        "end": 33,
+        "value": "data scientist",
+        "entity": "main_career"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "main_career",
+        "start": 19,
+        "end": 33,
+        "confidence_entity": 0.9603822827339172,
+        "value": "data scientist",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "main_career",
+        "start": 52,
+        "end": 60,
+        "confidence_entity": 0.9961951971054077,
+        "value": "engineer",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Can a data engineer become a good data scientist?",
+    "entities": [
+      {
+        "start": 34,
+        "end": 48,
+        "value": "data scientist",
+        "entity": "main_career"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "main_career",
+        "start": 6,
+        "end": 19,
+        "confidence_entity": 0.9526937007904053,
+        "value": "data engineer",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "main_career",
+        "start": 34,
+        "end": 48,
+        "confidence_entity": 0.9568045735359192,
+        "value": "data scientist",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "How are the chances of becoming a data analyst for a 7-year experienced Indian public sector bank manager with certification in data science using Python?",
+    "entities": [
+      {
+        "start": 34,
+        "end": 46,
+        "value": "data analyst",
+        "entity": "main_career"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "main_career",
+        "start": 34,
+        "end": 46,
+        "confidence_entity": 0.7610701322555542,
+        "value": "data analyst",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "career_position",
+        "start": 54,
+        "end": 55,
+        "confidence_entity": 0.9970255494117737,
+        "value": "-",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "main_career",
+        "start": 128,
+        "end": 132,
+        "confidence_entity": 0.7750508785247803,
+        "value": "data",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I am Java backend developer, how can I proceed to become full stack developer?",
+    "entities": [
+      {
+        "start": 57,
+        "end": 67,
+        "value": "full stack",
+        "entity": "career_position"
+      },
+      {
+        "start": 68,
+        "end": 77,
+        "value": "developer",
+        "entity": "main_career"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "main_career",
+        "start": 18,
+        "end": 27,
+        "confidence_entity": 0.9592929482460022,
+        "value": "developer",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "career_position",
+        "start": 57,
+        "end": 67,
+        "confidence_entity": 0.9099442958831787,
+        "value": "full stack",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "main_career",
+        "start": 68,
+        "end": 77,
+        "confidence_entity": 0.9508581757545471,
+        "value": "developer",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Can I become a front end developer and learn to use WordPress in 1 year?",
+    "entities": [
+      {
+        "start": 15,
+        "end": 24,
+        "value": "front end",
+        "entity": "career_position"
+      },
+      {
+        "start": 25,
+        "end": 34,
+        "value": "developer",
+        "entity": "main_career"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "career_position",
+        "start": 15,
+        "end": 24,
+        "confidence_entity": 0.9972748160362244,
+        "value": "front end",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "main_career",
+        "start": 25,
+        "end": 34,
+        "confidence_entity": 0.9345751404762268,
+        "value": "developer",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "course",
+        "start": 65,
+        "end": 66,
+        "confidence_entity": 0.64996337890625,
+        "value": "1",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "What is the step-by-step path to become a data scientist?",
+    "entities": [
+      {
+        "start": 42,
+        "end": 56,
+        "value": "data scientist",
+        "entity": "main_career"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "career_position",
+        "start": 16,
+        "end": 17,
+        "confidence_entity": 0.9975776076316833,
+        "value": "-",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "career_position",
+        "start": 19,
+        "end": 20,
+        "confidence_entity": 0.9976285099983215,
+        "value": "-",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "main_career",
+        "start": 42,
+        "end": 56,
+        "confidence_entity": 0.9667138457298279,
+        "value": "data scientist",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "How can I become good at data science by learning on my own?",
+    "entities": [
+      {
+        "start": 25,
+        "end": 37,
+        "value": "data science",
+        "entity": "main_career"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "main_career",
+        "start": 25,
+        "end": 29,
+        "confidence_entity": 0.7138059139251709,
+        "value": "data",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "How do I become a full-time full-stack developer in 1 month?",
+    "entities": [
+      {
+        "start": 28,
+        "end": 38,
+        "value": "full-stack",
+        "entity": "career_position"
+      },
+      {
+        "start": 39,
+        "end": 48,
+        "value": "developer",
+        "entity": "main_career"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "career_position",
+        "start": 18,
+        "end": 23,
+        "confidence_entity": 0.9976404905319214,
+        "value": "full-",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "career_position",
+        "start": 28,
+        "end": 38,
+        "confidence_entity": 0.9559754133224487,
+        "value": "full-stack",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "main_career",
+        "start": 39,
+        "end": 48,
+        "confidence_entity": 0.9377549290657043,
+        "value": "developer",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "course",
+        "start": 52,
+        "end": 53,
+        "confidence_entity": 0.6758947968482971,
+        "value": "1",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "How long does it take for a beginner to become very good at Data Science?",
+    "entities": [
+      {
+        "start": 60,
+        "end": 72,
+        "value": "Data Science",
+        "entity": "main_career"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "main_career",
+        "start": 60,
+        "end": 64,
+        "confidence_entity": 0.7535413503646851,
+        "value": "Data",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]
