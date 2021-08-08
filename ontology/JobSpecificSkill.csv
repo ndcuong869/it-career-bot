@@ -1,0 +1,131 @@
+skill_id,skill_name,skill_type
+SKILL001,Bayesian Probability,Knowledge
+SKILL002,Probability Theory,Knowledge
+SKILL003,Statistical Inference,Knowledge
+SKILL004,Statistical Hypothesis Testing,Knowledge
+SKILL005,R Programming,Technology
+SKILL006,Microsoft Excel,Technology
+SKILL007,Python Programming,Technology
+SKILL008,Data Analysis,Knowledge
+SKILL009,Data Visualization,TechnicalSkill
+SKILL010,SQL,TechnicalSkill
+SKILL011,IBM Cognos Analytics,Knowledge
+SKILL012,Azure Machine Learning,Technology
+SKILL013,Machine Learning,Knowledge
+SKILL014,Database,Knowledge
+SKILL015,Data Structure,Knowledge
+SKILL016,Sqlite,Technology
+SKILL017,Web Scraping,TechnicalSkill
+SKILL018,Github,TechnicalSkill
+SKILL019,Regression Analysis,Knowledge
+SKILL020,Data Manipulation,TechnicalSkill
+SKILL021,Regex Expression,TechnicalSkill
+SKILL022,Data Cleaning,TechnicalSkill
+SKILL023,Cluster Analysis,Knowledge
+SKILL024,Cloud Database,Knowledge
+SKILL025,Predictive Modeling,Knowledge
+SKILL026,Model Selection,TechnicalSkill
+SKILL027,Logistic Regression,Knowledge
+SKILL028,Neural Network,Knowledge
+SKILL029,Convolutional Neural Network,Knowledge
+SKILL030,Tensorflow,Technology
+SKILL031,Transformer,Technology
+SKILL032,Deep Learning,Knowledge
+SKILL033,Big Data,Knowledge
+SKILL034,Business Intelligence,Knowledge
+SKILL035,Data Science,Knowledge
+SKILL036,Rstudio,TechnicalSkill
+SKILL037,Debugging,TechnicalSkill
+SKILL038,Regular Expression (REGEX),Knowledge
+SKILL039,Data Cleansing,TechnicalSkill
+SKILL040,Text Mining,TechnicalSkill
+SKILL041,Pandas,Technology
+SKILL042,Matplotlib,Technology
+SKILL043,Numpy,Technology
+SKILL044,Data Virtualization,Knowledge
+SKILL045,Data Visualization (DataViz),TechnicalSkill
+SKILL046,Machine Learning (ML) Algorithms,Knowledge
+SKILL047,Scikit-Learn,Technology
+SKILL048,Natural Language Toolkit (NLTK),Technology
+SKILL049,Relational Database Management System (RDBMS),Knowledge
+SKILL050,Cloud Databases,Knowledge
+SKILL051,Ipython,Technology
+SKILL052,Probability And Statistics,Knowledge
+SKILL053,Basic Descriptive Statistics,Knowledge
+SKILL054,Internet Of Things (IOT),Knowledge
+SKILL055,Apache Spark,Technology
+SKILL056,Statistics,Knowledge
+SKILL057,Long Short-Term Memory (ISTM),Knowledge
+SKILL058,Natural Language Processing with BERT,TechnicalSkill
+SKILL059,ML Pipelines and ML Operations (MLOps),TechnicalSkill
+SKILL060,A/B Testing and Model Deployment,Knowledge
+SKILL061,Data Labeling at Scale,TechnicalSkill
+SKILL062,Automated Machine Learning (AutoML),Knowledge
+SKILL063,Statistical Data Bias Detection,Knowledge
+SKILL064,Multi-class Classification with FastText and BlazingText,TechnicalSkill
+SKILL065,Data ingestion,Knowledge
+SKILL066,Exploratory Data Analysis,Knowledge
+SKILL067,ML Pipelines and MLOps,Knowledge
+SKILL068,Model Training and Deployment with BERT,TechnicalSkill
+SKILL069,Model Debugging and Evaluation,Knowledge
+SKILL070,Linear Model,Knowledge
+SKILL071,Statistical Model,Knowledge
+SKILL072,regression,Knowledge
+SKILL073,Calculus,Knowledge
+SKILL074,and probability theory.,Knowledge
+SKILL075,Linear Algebra,Knowledge
+SKILL076,Estimator,Knowledge
+SKILL077,Advanced Machine Learning,Knowledge
+SKILL078,Statistical inference methods,Knowledge
+SKILL079,Confidence Interval,Knowledge
+SKILL080,Bayesian Statistics,Knowledge
+SKILL081,statistical regression,Knowledge
+SKILL082,Linear Regression,Knowledge
+SKILL083,Biostatistics,Knowledge
+SKILL084,Artificial Neural Network,TechnicalSkill
+SKILL085,Recurrent Neural Network,TechnicalSkill
+SKILL086,Transformers,Knowledge
+SKILL087,Backpropagation,Knowledge
+SKILL088,Neural Network Architecture,Knowledge
+SKILL089,Mathematical Optimization,Knowledge
+SKILL090,hyperparameter tuning,Knowledge
+SKILL091,Inductive Transfer,Knowledge
+SKILL092,Data Management,Knowledge
+SKILL093,Communication,Knowledge
+SKILL094,Leadership,Knowledge
+SKILL095,Interpretation,Knowledge
+SKILL096,Environmental Data Analysis,Knowledge
+SKILL097,Data Documentation,TechnicalSkill
+SKILL098,Geophysical Data,Knowledge
+SKILL099,Data Mining,TechnicalSkill
+SKILL100,Business Analytics,Knowledge
+SKILL101,Predictive Analytics,Knowledge
+SKILL102,Monte Carlo Method,Knowledge
+SKILL103,Prescriptive Analytics,Knowledge
+SKILL104,Linear Programming (LP),TechnicalSkill
+SKILL105,Data Preparation,Knowledge
+SKILL106,Time Series Forecasting,Knowledge
+SKILL107,Analytics,Knowledge
+SKILL108,Shiny Dashboards,TechnicalSkill
+SKILL109,Data Analysis and Modelling,TechnicalSkill
+SKILL110,Relational Databases (RDBMS),Knowledge
+SKILL111,Statistical Analysis,Knowledge
+SKILL112,Deployment Pipelines,Knowledge
+SKILL113,Model Pipelines,Knowledge
+SKILL114,Data Pipelines,Knowledge
+SKILL115,Machine Learning Engineering for Production,TechnicalSkill
+SKILL116,Model baseline,TechnicalSkill
+SKILL117,ML Deployment Challenges,Knowledge
+SKILL118,ML Metadata,Knowledge
+SKILL119,Probability,Knowledge
+SKILL120,Discrete Mathematics,Knowledge
+SKILL121,SparkML,Technology
+SKILL122,Google Cloud Platform,Technology
+SKILL123,DialogFlow,Technology
+SKILL124,Graph,Knowledge
+SKILL125,Web Design,Knowledge
+SKILL126,HTML,Technology
+SKILL127,Web Accessibility,Knowledge
+SKILL128,Document Object Model (DOM),Knowledge
+SKILL129,JavaScript,Technology
+SKILL130,Cascading Style Sheets (CCS),Technology
