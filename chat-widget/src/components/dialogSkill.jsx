@@ -93,12 +93,16 @@ const renderGroupSkill = (groupName, skillList, existedSkills, setSkill) => {
   );
 };
 
-export default function DialogSkill({ isOpen, closeDialog, isUpdate }) {
+export default function DialogSkill({ isOpen, closeDialog, isUpdate, setSkills}) {
   const [knowledge, setKnowledge] = useState([]);
   const [technicalSkill, setTechnicalSkill] = useState([]);
   const [technology, setTechnology] = useState([]);
   const [cookies, setCookie] = useCookies(["user"]);
   const [existedSkills, setExistedSkills] = useState([]);
+  const [previousSkills, setPreviousSkills] = useState([])
+
+  console.log('Previous skills')
+  console.log(previousSkills)
 
   const handleUpdate = () => {
     const user_id = cookies.user;
@@ -112,13 +116,26 @@ export default function DialogSkill({ isOpen, closeDialog, isUpdate }) {
     axios.post(root_url + "/api/user/skills", request);
     const channel = new BroadcastChannel("app-data");
     channel.postMessage({ is_update_skills: true });
+    alert("You updated successfull. You could go back to the chatbot.")
   };
+
+  const handleSkill = () => {
+    console.log("Set skills for new user")
+    setSkills(existedSkills)
+    closeDialog()
+  }
+
+  const handleCancel = () => {
+    console.log("Cancel")
+    setExistedSkills([...previousSkills])
+    closeDialog()
+  }
 
   const renderActionButtons = () => {
     return (
       <>
-        <Button onClick={closeDialog}>Cancel</Button>
-        <Button color="primary" onClick={handleUpdate}>
+        <Button onClick={handleCancel}>Cancel</Button>
+        <Button color="primary" onClick={isUpdate === true ? handleUpdate : handleSkill}>
           Update
         </Button>
       </>
@@ -174,10 +191,16 @@ export default function DialogSkill({ isOpen, closeDialog, isUpdate }) {
         setExistedSkills(skills);
       });
     }
+
   }, []);
 
   console.log("Reload");
   console.log(existedSkills);
+
+  useEffect(() => {
+    if (isOpen === true)
+    setPreviousSkills([...existedSkills])
+  }, [isOpen])
 
   return (
     <>

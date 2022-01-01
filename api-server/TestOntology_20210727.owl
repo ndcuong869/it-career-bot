@@ -133,43 +133,23 @@
   <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
 </owl:DatatypeProperty>
 
-<owl:Class rdf:about="http://elisasibarani.github.io/SARO#JobSpecificSkill"/>
-
-<owl:Class rdf:about="#Context"/>
+<owl:Class rdf:about="#LearningPath"/>
 
 <owl:Class rdf:about="#Course"/>
 
-<owl:Class rdf:about="#Duration">
-  <rdfs:subClassOf rdf:resource="#KnowWhen"/>
-</owl:Class>
-
-<owl:Class rdf:about="#Environment">
-  <rdfs:subClassOf rdf:resource="#KnowWhere"/>
-</owl:Class>
-
-<owl:Class rdf:about="#KnowHow">
-  <rdfs:subClassOf rdf:resource="#KnowledgeComponent"/>
-</owl:Class>
-
-<owl:Class rdf:about="#KnowWhen">
-  <rdfs:subClassOf rdf:resource="#Context"/>
-</owl:Class>
-
-<owl:Class rdf:about="#KnowWhere">
-  <rdfs:subClassOf rdf:resource="#Context"/>
-</owl:Class>
-
-<owl:Class rdf:about="#KnowWho">
-  <rdfs:subClassOf rdf:resource="#Context"/>
-</owl:Class>
+<owl:Class rdf:about="http://elisasibarani.github.io/SARO#JobSpecificSkill"/>
 
 <owl:Class rdf:about="#Knowledge">
   <rdfs:subClassOf rdf:resource="http://elisasibarani.github.io/SARO#JobSpecificSkill"/>
 </owl:Class>
 
+<owl:Class rdf:about="https://schema.org/Occupation"/>
+
 <owl:Class rdf:about="#KnowledgeComponent"/>
 
-<owl:Class rdf:about="#LearningPath"/>
+<owl:Class rdf:about="#KnowWho">
+  <rdfs:subClassOf rdf:resource="#Context"/>
+</owl:Class>
 
 <owl:Class rdf:about="#TechnicalSkill">
   <rdfs:subClassOf rdf:resource="http://elisasibarani.github.io/SARO#JobSpecificSkill"/>
@@ -179,12 +159,43 @@
   <rdfs:subClassOf rdf:resource="http://elisasibarani.github.io/SARO#JobSpecificSkill"/>
 </owl:Class>
 
-<owl:Class rdf:about="https://schema.org/Occupation"/>
+<owl:Class rdf:about="#Context"/>
+
+<owl:Class rdf:about="#Duration">
+  <rdfs:subClassOf rdf:resource="#KnowWhen"/>
+</owl:Class>
+
+<owl:Class rdf:about="#KnowWhen">
+  <rdfs:subClassOf rdf:resource="#Context"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Environment">
+  <rdfs:subClassOf rdf:resource="#KnowWhere"/>
+</owl:Class>
+
+<owl:Class rdf:about="#KnowWhere">
+  <rdfs:subClassOf rdf:resource="#Context"/>
+</owl:Class>
+
+<owl:Class rdf:about="#KnowHow">
+  <rdfs:subClassOf rdf:resource="#KnowledgeComponent"/>
+</owl:Class>
 
 <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
   <rdfs:domain rdf:resource="#KnowledgeComponent"/>
   <rdfs:range rdf:resource="#Context"/>
 </rdf:Description>
+
+<Course rdf:about="#COURSE001">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <provideSkill rdf:resource="#SKILL001"/>
+  <provideSkill rdf:resource="#SKILL002"/>
+  <course_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data science courses contain math�no avoiding that! This course is designed to teach learners the basic math you will need in order to be successful in almost any data science math course and was created for learners who have basic math skills but may not have taken algebra or pre-calculus. Data Science Math Skills introduces the core math that data science is built upon, with no extra complexity, introducing unfamiliar ideas and math symbols one-at-a-time. </course_description>
+  <course_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">13 hours</course_duration>
+  <course_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COURSE001</course_id>
+  <course_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data Science Math Skills</course_name>
+  <course_url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.coursera.org/learn/datasciencemathskills</course_url>
+</Course>
 
 <Knowledge rdf:about="#SKILL001">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
@@ -197,6 +208,18 @@
   <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL002</skill_id>
   <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Probability Theory</skill_name>
 </Knowledge>
+
+<Course rdf:about="#COURSE002">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <provideSkill rdf:resource="#SKILL003"/>
+  <provideSkill rdf:resource="#SKILL004"/>
+  <provideSkill rdf:resource="#SKILL005"/>
+  <course_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This course covers commonly used statistical inference methods for numerical and categorical data. You will learn how to set up and perform hypothesis tests, interpret p-values, and report the results of your analysis in a way that is interpretable for clients or the public. Using numerous data examples, you will learn to report estimates of quantities in a way that expresses the uncertainty of the quantity of interest. You will be guided through installing and using R and RStudio (free statistical software), and will use this software for lab exercises and a final project. The course introduces practical tools for performing data analysis and explores the fundamental concepts necessary to interpret and report results for both categorical and numerical data</course_description>
+  <course_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17 hours</course_duration>
+  <course_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COURSE002</course_id>
+  <course_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inferential Statistics</course_name>
+  <course_url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.coursera.org/learn/inferential-statistics-intro</course_url>
+</Course>
 
 <Knowledge rdf:about="#SKILL003">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
@@ -215,6 +238,21 @@
   <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL005</skill_id>
   <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R Programming</skill_name>
 </Technology>
+
+<Course rdf:about="#COURSE003">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <provideSkill rdf:resource="#SKILL006"/>
+  <provideSkill rdf:resource="#SKILL007"/>
+  <provideSkill rdf:resource="#SKILL008"/>
+  <provideSkill rdf:resource="#SKILL009"/>
+  <provideSkill rdf:resource="#SKILL010"/>
+  <provideSkill rdf:resource="#SKILL011"/>
+  <course_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Power your data analyst career by learning the core principles of data analysis and gaining hands-on skills practice. You�ll work with a variety of data sources, project scenarios, and data analysis tools, including Excel, SQL, Python, Jupyter Notebooks, and Cognos Analytics, gaining practical experience with data manipulation and applying analytical techniques.</course_description>
+  <course_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">132 hours</course_duration>
+  <course_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COURSE003</course_id>
+  <course_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IBM Data Analyst</course_name>
+  <course_url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.coursera.org/professional-certificates/ibm-data-analyst</course_url>
+</Course>
 
 <Technology rdf:about="#SKILL006">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
@@ -252,6 +290,18 @@
   <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IBM Cognos Analytics</skill_name>
 </Knowledge>
 
+<Course rdf:about="#COURSE004">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <provideSkill rdf:resource="#SKILL008"/>
+  <provideSkill rdf:resource="#SKILL012"/>
+  <provideSkill rdf:resource="#SKILL013"/>
+  <course_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In this project-based course, you are going to build an end-to-end machine learning pipeline in Azure ML Studio, all without writing a single line of code! This course uses the Adult Income Census data set to train a model to predict an individual's income. It predicts whether an individual's annual income is greater than or less than $50,000. The estimator used in this project is a Two-Class Boosted Decision Tree classifier. Some of the features used to train the model are age, education, occupation, etc. Once you have scored and evaluated the model on the test data, you will deploy the trained model as an Azure Machine Learning web service. In just under an hour, you will be able to send new data to the web service API and receive the resulting predictions</course_description>
+  <course_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2 hours</course_duration>
+  <course_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COURSE004</course_id>
+  <course_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Machine Learning Pipelines with Azure ML Studio</course_name>
+  <course_url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.coursera.org/projects/azure-machine-learning-studio-pipeline</course_url>
+</Course>
+
 <Technology rdf:about="#SKILL012">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL012</skill_id>
@@ -263,6 +313,20 @@
   <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL013</skill_id>
   <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Machine Learning</skill_name>
 </Knowledge>
+
+<Course rdf:about="#COURSE005">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <provideSkill rdf:resource="#SKILL007"/>
+  <provideSkill rdf:resource="#SKILL014"/>
+  <provideSkill rdf:resource="#SKILL015"/>
+  <provideSkill rdf:resource="#SKILL016"/>
+  <provideSkill rdf:resource="#SKILL017"/>
+  <course_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This Specialization builds on the success of the Python for Everybody course and will introduce fundamental programming concepts including data structures, networked application program interfaces, and databases, using the Python programming language. In the Capstone Project, you�ll use the technologies learned throughout the Specialization to design and create your own  applications for data retrieval, processing, and visualization.</course_description>
+  <course_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">64 hours</course_duration>
+  <course_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COURSE005</course_id>
+  <course_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Python for Everybody</course_name>
+  <course_url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.coursera.org/specializations/python</course_url>
+</Course>
 
 <Knowledge rdf:about="#SKILL014">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
@@ -287,6 +351,21 @@
   <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL017</skill_id>
   <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Web Scraping</skill_name>
 </TechnicalSkill>
+
+<Course rdf:about="#COURSE006">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <provideSkill rdf:resource="#SKILL018"/>
+  <provideSkill rdf:resource="#SKILL019"/>
+  <provideSkill rdf:resource="#SKILL020"/>
+  <provideSkill rdf:resource="#SKILL021"/>
+  <provideSkill rdf:resource="#SKILL022"/>
+  <provideSkill rdf:resource="#SKILL023"/>
+  <course_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This Specialization covers the concepts and tools you'll need throughout the entire data science pipeline, from asking the right kinds of questions to making inferences and publishing results. In the final Capstone Project, you�ll apply the skills learned by building a data product using real-world data. At completion, students will have a portfolio demonstrating their mastery of the material. </course_description>
+  <course_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">308 hours</course_duration>
+  <course_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COURSE006</course_id>
+  <course_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data Science</course_name>
+  <course_url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.coursera.org/specializations/jhu-data-science</course_url>
+</Course>
 
 <TechnicalSkill rdf:about="#SKILL018">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
@@ -324,6 +403,23 @@
   <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cluster Analysis</skill_name>
 </Knowledge>
 
+<Course rdf:about="#COURSE007">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <provideSkill rdf:resource="#SKILL007"/>
+  <provideSkill rdf:resource="#SKILL008"/>
+  <provideSkill rdf:resource="#SKILL010"/>
+  <provideSkill rdf:resource="#SKILL024"/>
+  <provideSkill rdf:resource="#SKILL025"/>
+  <provideSkill rdf:resource="#SKILL026"/>
+  <provideSkill rdf:resource="#SKILL027"/>
+  <provideSkill rdf:resource="#SKILL028"/>
+  <course_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data science is one of the hottest professions of the decade, and the demand for data scientists who can analyze data and communicate results to inform data driven decisions has never been greater. This Professional Certificate from IBM will help anyone interested in pursuing a career in data science or machine learning develop career-relevant skills and experience. </course_description>
+  <course_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">176 hours</course_duration>
+  <course_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COURSE007</course_id>
+  <course_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IBM Data Science</course_name>
+  <course_url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.coursera.org/professional-certificates/ibm-data-science</course_url>
+</Course>
+
 <Knowledge rdf:about="#SKILL024">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL024</skill_id>
@@ -353,766 +449,6 @@
   <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL028</skill_id>
   <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neural Network</skill_name>
 </Knowledge>
-
-<Knowledge rdf:about="#SKILL029">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL029</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Convolutional Neural Network</skill_name>
-</Knowledge>
-
-<Technology rdf:about="#SKILL030">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL030</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tensorflow</skill_name>
-</Technology>
-
-<Technology rdf:about="#SKILL031">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL031</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transformer</skill_name>
-</Technology>
-
-<Knowledge rdf:about="#SKILL032">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL032</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deep Learning</skill_name>
-</Knowledge>
-
-<Knowledge rdf:about="#SKILL033">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL033</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Big Data</skill_name>
-</Knowledge>
-
-<Knowledge rdf:about="#SKILL034">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL034</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Business Intelligence</skill_name>
-</Knowledge>
-
-<Knowledge rdf:about="#SKILL035">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL035</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data Science</skill_name>
-</Knowledge>
-
-<TechnicalSkill rdf:about="#SKILL036">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL036</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rstudio</skill_name>
-</TechnicalSkill>
-
-<TechnicalSkill rdf:about="#SKILL037">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL037</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Debugging</skill_name>
-</TechnicalSkill>
-
-<Knowledge rdf:about="#SKILL038">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL038</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Regular Expression (REGEX)</skill_name>
-</Knowledge>
-
-<TechnicalSkill rdf:about="#SKILL039">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL039</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data Cleansing</skill_name>
-</TechnicalSkill>
-
-<TechnicalSkill rdf:about="#SKILL040">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL040</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Text Mining</skill_name>
-</TechnicalSkill>
-
-<Technology rdf:about="#SKILL041">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL041</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pandas</skill_name>
-</Technology>
-
-<Technology rdf:about="#SKILL042">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL042</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matplotlib</skill_name>
-</Technology>
-
-<Technology rdf:about="#SKILL043">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL043</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Numpy</skill_name>
-</Technology>
-
-<Knowledge rdf:about="#SKILL044">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL044</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data Virtualization</skill_name>
-</Knowledge>
-
-<TechnicalSkill rdf:about="#SKILL045">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL045</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data Visualization (DataViz)</skill_name>
-</TechnicalSkill>
-
-<Knowledge rdf:about="#SKILL046">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL046</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Machine Learning (ML) Algorithms</skill_name>
-</Knowledge>
-
-<Technology rdf:about="#SKILL047">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL047</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scikit-Learn</skill_name>
-</Technology>
-
-<Technology rdf:about="#SKILL048">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL048</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Natural Language Toolkit (NLTK)</skill_name>
-</Technology>
-
-<Knowledge rdf:about="#SKILL049">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL049</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relational Database Management System (RDBMS)</skill_name>
-</Knowledge>
-
-<Knowledge rdf:about="#SKILL050">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL050</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cloud Databases</skill_name>
-</Knowledge>
-
-<Technology rdf:about="#SKILL051">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL051</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ipython</skill_name>
-</Technology>
-
-<Knowledge rdf:about="#SKILL052">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL052</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Probability And Statistics</skill_name>
-</Knowledge>
-
-<Knowledge rdf:about="#SKILL053">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL053</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Basic Descriptive Statistics</skill_name>
-</Knowledge>
-
-<Knowledge rdf:about="#SKILL054">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL054</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Internet Of Things (IOT)</skill_name>
-</Knowledge>
-
-<Technology rdf:about="#SKILL055">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL055</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Apache Spark</skill_name>
-</Technology>
-
-<Knowledge rdf:about="#SKILL056">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL056</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Statistics</skill_name>
-</Knowledge>
-
-<Knowledge rdf:about="#SKILL057">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL057</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Long Short-Term Memory (ISTM)</skill_name>
-</Knowledge>
-
-<TechnicalSkill rdf:about="#SKILL058">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL058</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Natural Language Processing with BERT</skill_name>
-</TechnicalSkill>
-
-<TechnicalSkill rdf:about="#SKILL059">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL059</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ML Pipelines and ML Operations (MLOps)</skill_name>
-</TechnicalSkill>
-
-<Knowledge rdf:about="#SKILL060">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL060</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A/B Testing and Model Deployment</skill_name>
-</Knowledge>
-
-<TechnicalSkill rdf:about="#SKILL061">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL061</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data Labeling at Scale</skill_name>
-</TechnicalSkill>
-
-<Knowledge rdf:about="#SKILL062">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL062</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Automated Machine Learning (AutoML)</skill_name>
-</Knowledge>
-
-<Knowledge rdf:about="#SKILL063">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL063</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Statistical Data Bias Detection</skill_name>
-</Knowledge>
-
-<TechnicalSkill rdf:about="#SKILL064">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL064</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Multi-class Classification with FastText and BlazingText</skill_name>
-</TechnicalSkill>
-
-<Knowledge rdf:about="#SKILL065">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL065</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data ingestion</skill_name>
-</Knowledge>
-
-<Knowledge rdf:about="#SKILL066">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL066</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Exploratory Data Analysis</skill_name>
-</Knowledge>
-
-<Knowledge rdf:about="#SKILL067">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL067</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ML Pipelines and MLOps</skill_name>
-</Knowledge>
-
-<TechnicalSkill rdf:about="#SKILL068">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL068</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Model Training and Deployment with BERT</skill_name>
-</TechnicalSkill>
-
-<Knowledge rdf:about="#SKILL069">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL069</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Model Debugging and Evaluation</skill_name>
-</Knowledge>
-
-<Knowledge rdf:about="#SKILL070">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL070</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Linear Model</skill_name>
-</Knowledge>
-
-<Knowledge rdf:about="#SKILL071">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL071</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Statistical Model</skill_name>
-</Knowledge>
-
-<Knowledge rdf:about="#SKILL072">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL072</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">regression</skill_name>
-</Knowledge>
-
-<Knowledge rdf:about="#SKILL073">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL073</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Calculus</skill_name>
-</Knowledge>
-
-<Knowledge rdf:about="#SKILL074">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL074</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">and probability theory.</skill_name>
-</Knowledge>
-
-<Knowledge rdf:about="#SKILL075">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL075</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Linear Algebra</skill_name>
-</Knowledge>
-
-<Knowledge rdf:about="#SKILL076">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL076</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Estimator</skill_name>
-</Knowledge>
-
-<Knowledge rdf:about="#SKILL077">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL077</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Advanced Machine Learning</skill_name>
-</Knowledge>
-
-<Knowledge rdf:about="#SKILL078">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL078</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Statistical inference methods</skill_name>
-</Knowledge>
-
-<Knowledge rdf:about="#SKILL079">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL079</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence Interval</skill_name>
-</Knowledge>
-
-<Knowledge rdf:about="#SKILL080">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL080</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bayesian Statistics</skill_name>
-</Knowledge>
-
-<Knowledge rdf:about="#SKILL081">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL081</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">statistical regression</skill_name>
-</Knowledge>
-
-<Knowledge rdf:about="#SKILL082">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL082</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Linear Regression</skill_name>
-</Knowledge>
-
-<Knowledge rdf:about="#SKILL083">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL083</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biostatistics</skill_name>
-</Knowledge>
-
-<TechnicalSkill rdf:about="#SKILL084">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL084</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Artificial Neural Network</skill_name>
-</TechnicalSkill>
-
-<TechnicalSkill rdf:about="#SKILL085">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL085</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Recurrent Neural Network</skill_name>
-</TechnicalSkill>
-
-<Knowledge rdf:about="#SKILL086">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL086</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transformers</skill_name>
-</Knowledge>
-
-<Knowledge rdf:about="#SKILL087">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL087</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Backpropagation</skill_name>
-</Knowledge>
-
-<Knowledge rdf:about="#SKILL088">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL088</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neural Network Architecture</skill_name>
-</Knowledge>
-
-<Knowledge rdf:about="#SKILL089">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL089</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mathematical Optimization</skill_name>
-</Knowledge>
-
-<Knowledge rdf:about="#SKILL090">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL090</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hyperparameter tuning</skill_name>
-</Knowledge>
-
-<Knowledge rdf:about="#SKILL091">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL091</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inductive Transfer</skill_name>
-</Knowledge>
-
-<Knowledge rdf:about="#SKILL092">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL092</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data Management</skill_name>
-</Knowledge>
-
-<Knowledge rdf:about="#SKILL093">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL093</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Communication</skill_name>
-</Knowledge>
-
-<Knowledge rdf:about="#SKILL094">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL094</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Leadership</skill_name>
-</Knowledge>
-
-<Knowledge rdf:about="#SKILL095">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL095</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Interpretation</skill_name>
-</Knowledge>
-
-<Knowledge rdf:about="#SKILL096">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL096</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Environmental Data Analysis</skill_name>
-</Knowledge>
-
-<TechnicalSkill rdf:about="#SKILL097">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL097</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data Documentation</skill_name>
-</TechnicalSkill>
-
-<Knowledge rdf:about="#SKILL098">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL098</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Geophysical Data</skill_name>
-</Knowledge>
-
-<TechnicalSkill rdf:about="#SKILL099">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL099</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data Mining</skill_name>
-</TechnicalSkill>
-
-<Knowledge rdf:about="#SKILL100">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL100</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Business Analytics</skill_name>
-</Knowledge>
-
-<Knowledge rdf:about="#SKILL101">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL101</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Predictive Analytics</skill_name>
-</Knowledge>
-
-<Knowledge rdf:about="#SKILL102">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL102</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Monte Carlo Method</skill_name>
-</Knowledge>
-
-<Knowledge rdf:about="#SKILL103">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL103</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Prescriptive Analytics</skill_name>
-</Knowledge>
-
-<TechnicalSkill rdf:about="#SKILL104">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL104</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Linear Programming (LP)</skill_name>
-</TechnicalSkill>
-
-<Knowledge rdf:about="#SKILL105">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL105</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data Preparation</skill_name>
-</Knowledge>
-
-<Knowledge rdf:about="#SKILL106">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL106</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Time Series Forecasting</skill_name>
-</Knowledge>
-
-<Knowledge rdf:about="#SKILL107">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL107</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Analytics</skill_name>
-</Knowledge>
-
-<TechnicalSkill rdf:about="#SKILL108">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL108</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shiny Dashboards</skill_name>
-</TechnicalSkill>
-
-<TechnicalSkill rdf:about="#SKILL109">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL109</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data Analysis and Modelling</skill_name>
-</TechnicalSkill>
-
-<Knowledge rdf:about="#SKILL110">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL110</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relational Databases (RDBMS)</skill_name>
-</Knowledge>
-
-<Knowledge rdf:about="#SKILL111">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL111</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Statistical Analysis</skill_name>
-</Knowledge>
-
-<Knowledge rdf:about="#SKILL112">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL112</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deployment Pipelines</skill_name>
-</Knowledge>
-
-<Knowledge rdf:about="#SKILL113">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL113</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Model Pipelines</skill_name>
-</Knowledge>
-
-<Knowledge rdf:about="#SKILL114">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL114</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data Pipelines</skill_name>
-</Knowledge>
-
-<TechnicalSkill rdf:about="#SKILL115">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL115</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Machine Learning Engineering for Production</skill_name>
-</TechnicalSkill>
-
-<TechnicalSkill rdf:about="#SKILL116">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL116</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Model baseline</skill_name>
-</TechnicalSkill>
-
-<Knowledge rdf:about="#SKILL117">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL117</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ML Deployment Challenges</skill_name>
-</Knowledge>
-
-<Knowledge rdf:about="#SKILL118">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL118</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ML Metadata</skill_name>
-</Knowledge>
-
-<Knowledge rdf:about="#SKILL119">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL119</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Probability</skill_name>
-</Knowledge>
-
-<Knowledge rdf:about="#SKILL120">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL120</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Discrete Mathematics</skill_name>
-</Knowledge>
-
-<Technology rdf:about="#SKILL121">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL121</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SparkML</skill_name>
-</Technology>
-
-<Technology rdf:about="#SKILL122">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL122</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Google Cloud Platform</skill_name>
-</Technology>
-
-<Technology rdf:about="#SKILL123">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL123</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DialogFlow</skill_name>
-</Technology>
-
-<Knowledge rdf:about="#SKILL124">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL124</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Graph</skill_name>
-</Knowledge>
-
-<Knowledge rdf:about="#SKILL125">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL125</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Web Design</skill_name>
-</Knowledge>
-
-<Technology rdf:about="#SKILL126">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL126</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HTML</skill_name>
-</Technology>
-
-<Knowledge rdf:about="#SKILL127">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL127</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Web Accessibility</skill_name>
-</Knowledge>
-
-<Knowledge rdf:about="#SKILL128">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL128</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Document Object Model (DOM)</skill_name>
-</Knowledge>
-
-<Technology rdf:about="#SKILL129">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL129</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JavaScript</skill_name>
-</Technology>
-
-<Technology rdf:about="#SKILL130">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL130</skill_id>
-  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cascading Style Sheets (CCS)</skill_name>
-</Technology>
-
-<sche:Occupation rdf:about="https://schema.org/OCCUPATION001">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasLearningPath rdf:resource="#LEARNING_PATH_001"/>
-  <hasLearningPath rdf:resource="#LEARNING_PATH_004"/>
-  <hasLearningPath rdf:resource="#LEARNING_PATH_006"/>
-  <hasLearningPath rdf:resource="#LEARNING_PATH_008"/>
-  <hasLearningPath rdf:resource="#LEARNING_PATH_011"/>
-  <hasLearningPath rdf:resource="#LEARNING_PATH_016"/>
-  <hasLearningPath rdf:resource="#LEARNING_PATH_021"/>
-  <hasLearningPath rdf:resource="#LEARNING_PATH_022"/>
-  <hasLearningPath rdf:resource="#LEARNING_PATH_024"/>
-  <requireSkill rdf:resource="#SKILL001"/>
-  <requireSkill rdf:resource="#SKILL002"/>
-  <requireSkill rdf:resource="#SKILL003"/>
-  <occupation_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OCCUPATION001</occupation_id>
-  <occupation_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data analyst</occupation_name>
-</sche:Occupation>
-
-<sche:Occupation rdf:about="https://schema.org/OCCUPATION002">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasLearningPath rdf:resource="#LEARNING_PATH_002"/>
-  <hasLearningPath rdf:resource="#LEARNING_PATH_003"/>
-  <hasLearningPath rdf:resource="#LEARNING_PATH_005"/>
-  <hasLearningPath rdf:resource="#LEARNING_PATH_007"/>
-  <hasLearningPath rdf:resource="#LEARNING_PATH_009"/>
-  <hasLearningPath rdf:resource="#LEARNING_PATH_010"/>
-  <hasLearningPath rdf:resource="#LEARNING_PATH_012"/>
-  <hasLearningPath rdf:resource="#LEARNING_PATH_013"/>
-  <hasLearningPath rdf:resource="#LEARNING_PATH_014"/>
-  <hasLearningPath rdf:resource="#LEARNING_PATH_015"/>
-  <hasLearningPath rdf:resource="#LEARNING_PATH_017"/>
-  <hasLearningPath rdf:resource="#LEARNING_PATH_018"/>
-  <hasLearningPath rdf:resource="#LEARNING_PATH_019"/>
-  <hasLearningPath rdf:resource="#LEARNING_PATH_020"/>
-  <hasLearningPath rdf:resource="#LEARNING_PATH_023"/>
-  <requireSkill rdf:resource="#SKILL003"/>
-  <requireSkill rdf:resource="#SKILL004"/>
-  <requireSkill rdf:resource="#SKILL005"/>
-  <occupation_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OCCUPATION002</occupation_id>
-  <occupation_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data scientist</occupation_name>
-</sche:Occupation>
-
-<sche:Occupation rdf:about="https://schema.org/OCCUPATION003">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasLearningPath rdf:resource="#LEARNING_PATH_025"/>
-  <requireSkill rdf:resource="#SKILL126"/>
-  <requireSkill rdf:resource="#SKILL129"/>
-  <requireSkill rdf:resource="#SKILL130"/>
-  <occupation_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OCCUPATION003</occupation_id>
-  <occupation_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Front end developer</occupation_name>
-</sche:Occupation>
-
-<Course rdf:about="#COURSE001">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <provideSkill rdf:resource="#SKILL001"/>
-  <provideSkill rdf:resource="#SKILL002"/>
-  <course_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data science courses contain math�no avoiding that! This course is designed to teach learners the basic math you will need in order to be successful in almost any data science math course and was created for learners who have basic math skills but may not have taken algebra or pre-calculus. Data Science Math Skills introduces the core math that data science is built upon, with no extra complexity, introducing unfamiliar ideas and math symbols one-at-a-time. </course_description>
-  <course_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">13 hours</course_duration>
-  <course_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COURSE001</course_id>
-  <course_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data Science Math Skills</course_name>
-  <course_url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.coursera.org/learn/datasciencemathskills</course_url>
-</Course>
-
-<Course rdf:about="#COURSE002">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <provideSkill rdf:resource="#SKILL003"/>
-  <provideSkill rdf:resource="#SKILL004"/>
-  <provideSkill rdf:resource="#SKILL005"/>
-  <course_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This course covers commonly used statistical inference methods for numerical and categorical data. You will learn how to set up and perform hypothesis tests, interpret p-values, and report the results of your analysis in a way that is interpretable for clients or the public. Using numerous data examples, you will learn to report estimates of quantities in a way that expresses the uncertainty of the quantity of interest. You will be guided through installing and using R and RStudio (free statistical software), and will use this software for lab exercises and a final project. The course introduces practical tools for performing data analysis and explores the fundamental concepts necessary to interpret and report results for both categorical and numerical data</course_description>
-  <course_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17 hours</course_duration>
-  <course_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COURSE002</course_id>
-  <course_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inferential Statistics</course_name>
-  <course_url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.coursera.org/learn/inferential-statistics-intro</course_url>
-</Course>
-
-<Course rdf:about="#COURSE003">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <provideSkill rdf:resource="#SKILL006"/>
-  <provideSkill rdf:resource="#SKILL007"/>
-  <provideSkill rdf:resource="#SKILL008"/>
-  <provideSkill rdf:resource="#SKILL009"/>
-  <provideSkill rdf:resource="#SKILL010"/>
-  <provideSkill rdf:resource="#SKILL011"/>
-  <course_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Power your data analyst career by learning the core principles of data analysis and gaining hands-on skills practice. You�ll work with a variety of data sources, project scenarios, and data analysis tools, including Excel, SQL, Python, Jupyter Notebooks, and Cognos Analytics, gaining practical experience with data manipulation and applying analytical techniques.</course_description>
-  <course_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">132 hours</course_duration>
-  <course_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COURSE003</course_id>
-  <course_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IBM Data Analyst</course_name>
-  <course_url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.coursera.org/professional-certificates/ibm-data-analyst</course_url>
-</Course>
-
-<Course rdf:about="#COURSE004">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <provideSkill rdf:resource="#SKILL008"/>
-  <provideSkill rdf:resource="#SKILL012"/>
-  <provideSkill rdf:resource="#SKILL013"/>
-  <course_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In this project-based course, you are going to build an end-to-end machine learning pipeline in Azure ML Studio, all without writing a single line of code! This course uses the Adult Income Census data set to train a model to predict an individual's income. It predicts whether an individual's annual income is greater than or less than $50,000. The estimator used in this project is a Two-Class Boosted Decision Tree classifier. Some of the features used to train the model are age, education, occupation, etc. Once you have scored and evaluated the model on the test data, you will deploy the trained model as an Azure Machine Learning web service. In just under an hour, you will be able to send new data to the web service API and receive the resulting predictions</course_description>
-  <course_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2 hours</course_duration>
-  <course_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COURSE004</course_id>
-  <course_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Machine Learning Pipelines with Azure ML Studio</course_name>
-  <course_url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.coursera.org/projects/azure-machine-learning-studio-pipeline</course_url>
-</Course>
-
-<Course rdf:about="#COURSE005">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <provideSkill rdf:resource="#SKILL007"/>
-  <provideSkill rdf:resource="#SKILL014"/>
-  <provideSkill rdf:resource="#SKILL015"/>
-  <provideSkill rdf:resource="#SKILL016"/>
-  <provideSkill rdf:resource="#SKILL017"/>
-  <course_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This Specialization builds on the success of the Python for Everybody course and will introduce fundamental programming concepts including data structures, networked application program interfaces, and databases, using the Python programming language. In the Capstone Project, you�ll use the technologies learned throughout the Specialization to design and create your own  applications for data retrieval, processing, and visualization.</course_description>
-  <course_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">64 hours</course_duration>
-  <course_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COURSE005</course_id>
-  <course_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Python for Everybody</course_name>
-  <course_url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.coursera.org/specializations/python</course_url>
-</Course>
-
-<Course rdf:about="#COURSE006">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <provideSkill rdf:resource="#SKILL018"/>
-  <provideSkill rdf:resource="#SKILL019"/>
-  <provideSkill rdf:resource="#SKILL020"/>
-  <provideSkill rdf:resource="#SKILL021"/>
-  <provideSkill rdf:resource="#SKILL022"/>
-  <provideSkill rdf:resource="#SKILL023"/>
-  <course_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This Specialization covers the concepts and tools you'll need throughout the entire data science pipeline, from asking the right kinds of questions to making inferences and publishing results. In the final Capstone Project, you�ll apply the skills learned by building a data product using real-world data. At completion, students will have a portfolio demonstrating their mastery of the material. </course_description>
-  <course_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">308 hours</course_duration>
-  <course_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COURSE006</course_id>
-  <course_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data Science</course_name>
-  <course_url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.coursera.org/specializations/jhu-data-science</course_url>
-</Course>
-
-<Course rdf:about="#COURSE007">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <provideSkill rdf:resource="#SKILL008"/>
-  <provideSkill rdf:resource="#SKILL007"/>
-  <provideSkill rdf:resource="#SKILL024"/>
-  <provideSkill rdf:resource="#SKILL025"/>
-  <provideSkill rdf:resource="#SKILL026"/>
-  <provideSkill rdf:resource="#SKILL027"/>
-  <provideSkill rdf:resource="#SKILL028"/>
-  <provideSkill rdf:resource="#SKILL010"/>
-  <course_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data science is one of the hottest professions of the decade, and the demand for data scientists who can analyze data and communicate results to inform data driven decisions has never been greater. This Professional Certificate from IBM will help anyone interested in pursuing a career in data science or machine learning develop career-relevant skills and experience. </course_description>
-  <course_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">176 hours</course_duration>
-  <course_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COURSE007</course_id>
-  <course_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IBM Data Science</course_name>
-  <course_url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.coursera.org/professional-certificates/ibm-data-science</course_url>
-</Course>
 
 <Course rdf:about="#COURSE008">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
@@ -1150,6 +486,30 @@
   <course_url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.coursera.org/specializations/deep-learning</course_url>
 </Course>
 
+<Knowledge rdf:about="#SKILL029">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL029</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Convolutional Neural Network</skill_name>
+</Knowledge>
+
+<Technology rdf:about="#SKILL030">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL030</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tensorflow</skill_name>
+</Technology>
+
+<Technology rdf:about="#SKILL031">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL031</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transformer</skill_name>
+</Technology>
+
+<Knowledge rdf:about="#SKILL032">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL032</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deep Learning</skill_name>
+</Knowledge>
+
 <Course rdf:about="#COURSE011">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <provideSkill rdf:resource="#SKILL013"/>
@@ -1186,10 +546,10 @@
 
 <Course rdf:about="#COURSE014">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <provideSkill rdf:resource="#SKILL033"/>
-  <provideSkill rdf:resource="#SKILL034"/>
   <provideSkill rdf:resource="#SKILL009"/>
   <provideSkill rdf:resource="#SKILL017"/>
+  <provideSkill rdf:resource="#SKILL033"/>
+  <provideSkill rdf:resource="#SKILL034"/>
   <course_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Learn the fundamentals of Data Analytics and gain an understanding of the data ecosystem, the process and lifecycle of data analytics, career opportunities, and the different learning paths you can take to be a Data Analyst</course_description>
   <course_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10 hours</course_duration>
   <course_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COURSE014</course_id>
@@ -1197,11 +557,23 @@
   <course_url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.edx.org/course/data-analytics-for-everyone</course_url>
 </Course>
 
+<Knowledge rdf:about="#SKILL033">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL033</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Big Data</skill_name>
+</Knowledge>
+
+<Knowledge rdf:about="#SKILL034">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL034</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Business Intelligence</skill_name>
+</Knowledge>
+
 <Course rdf:about="#COURSE015">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <provideSkill rdf:resource="#SKILL006"/>
-  <provideSkill rdf:resource="#SKILL022"/>
   <provideSkill rdf:resource="#SKILL008"/>
+  <provideSkill rdf:resource="#SKILL022"/>
   <course_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Build the fundamental knowledge required to use Excel spreadsheets to perform basic data analysis. The course covers the basic workings and key features of Excel to help students analyze their data.</course_description>
   <course_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10 hours</course_duration>
   <course_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COURSE015</course_id>
@@ -1223,9 +595,9 @@
 
 <Course rdf:about="#COURSE017">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <provideSkill rdf:resource="#SKILL035"/>
-  <provideSkill rdf:resource="#SKILL018"/>
   <provideSkill rdf:resource="#SKILL005"/>
+  <provideSkill rdf:resource="#SKILL018"/>
+  <provideSkill rdf:resource="#SKILL035"/>
   <provideSkill rdf:resource="#SKILL036"/>
   <course_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In this course you will get an introduction to the main tools and ideas in the data scientist's toolbox. The course gives an overview of the data, questions, and tools that data analysts and data scientists work with. There are two components to this course. The first is a conceptual introduction to the ideas behind turning data into actionable knowledge. The second is a practical introduction to the tools that will be used in the program like version control, markdown, git, GitHub, R, and RStudio.</course_description>
   <course_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18 hours</course_duration>
@@ -1234,12 +606,24 @@
   <course_url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.coursera.org/learn/data-scientists-tools?specialization=jhu-data-science</course_url>
 </Course>
 
+<Knowledge rdf:about="#SKILL035">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL035</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data Science</skill_name>
+</Knowledge>
+
+<TechnicalSkill rdf:about="#SKILL036">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL036</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rstudio</skill_name>
+</TechnicalSkill>
+
 <Course rdf:about="#COURSE018">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <provideSkill rdf:resource="#SKILL008"/>
-  <provideSkill rdf:resource="#SKILL037"/>
   <provideSkill rdf:resource="#SKILL005"/>
+  <provideSkill rdf:resource="#SKILL008"/>
   <provideSkill rdf:resource="#SKILL036"/>
+  <provideSkill rdf:resource="#SKILL037"/>
   <course_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In this course you will learn how to program in R and how to use R for effective data analysis. You will learn how to install and configure software necessary for a statistical programming environment and describe generic programming language concepts as they are implemented in a high-level statistical language. The course covers practical issues in statistical computing which includes programming in R, reading data into R, accessing R packages, writing R functions, debugging, profiling R code, and organizing and commenting R code. Topics in statistical data analysis will provide working examples.</course_description>
   <course_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">57 hours</course_duration>
   <course_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COURSE018</course_id>
@@ -1247,11 +631,17 @@
   <course_url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.coursera.org/learn/r-programming?specialization=jhu-data-science</course_url>
 </Course>
 
+<TechnicalSkill rdf:about="#SKILL037">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL037</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Debugging</skill_name>
+</TechnicalSkill>
+
 <Course rdf:about="#COURSE019">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <provideSkill rdf:resource="#SKILL005"/>
   <provideSkill rdf:resource="#SKILL020"/>
   <provideSkill rdf:resource="#SKILL038"/>
-  <provideSkill rdf:resource="#SKILL005"/>
   <provideSkill rdf:resource="#SKILL039"/>
   <course_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Before you can work with data you have to get some. This course will cover the basic ways that data can be obtained. The course will cover obtaining data from the web, from APIs, from databases and from colleagues in various formats. It will also cover the basics of data cleaning and how to make data “tidy”. Tidy data dramatically speed downstream data analysis tasks. The course will also cover the components of a complete data set including raw data, processing instructions, codebooks, and processed data. The course will cover the basics needed for collecting, cleaning, and sharing data.</course_description>
   <course_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20 hours</course_duration>
@@ -1260,10 +650,22 @@
   <course_url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.coursera.org/learn/data-cleaning?specialization=jhu-data-science</course_url>
 </Course>
 
+<Knowledge rdf:about="#SKILL038">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL038</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Regular Expression (REGEX)</skill_name>
+</Knowledge>
+
+<TechnicalSkill rdf:about="#SKILL039">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL039</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data Cleansing</skill_name>
+</TechnicalSkill>
+
 <Course rdf:about="#COURSE020">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <provideSkill rdf:resource="#SKILL023"/>
   <provideSkill rdf:resource="#SKILL005"/>
+  <provideSkill rdf:resource="#SKILL023"/>
   <provideSkill rdf:resource="#SKILL066"/>
   <course_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This course covers the essential exploratory techniques for summarizing data. These techniques are typically applied before formal modeling commences and can help inform the development of more complex statistical models. Exploratory techniques are also important for eliminating or sharpening potential hypotheses about the world that can be addressed by the data. We will cover in detail the plotting systems in R as well as some of the basic principles of constructing data graphics. We will also cover some of the common multivariate statistical techniques used to visualize high-dimensional data.</course_description>
   <course_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">55 hours</course_duration>
@@ -1272,12 +674,18 @@
   <course_url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.coursera.org/learn/exploratory-data-analysis?specialization=jhu-data-science</course_url>
 </Course>
 
+<Knowledge rdf:about="#SKILL066">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL066</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Exploratory Data Analysis</skill_name>
+</Knowledge>
+
 <Course rdf:about="#COURSE021">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <provideSkill rdf:resource="#SKILL007"/>
-  <provideSkill rdf:resource="#SKILL043"/>
-  <provideSkill rdf:resource="#SKILL041"/>
   <provideSkill rdf:resource="#SKILL039"/>
+  <provideSkill rdf:resource="#SKILL041"/>
+  <provideSkill rdf:resource="#SKILL043"/>
   <course_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This course will introduce the learner to the basics of the python programming environment, including fundamental python programming techniques such as lambdas, reading and manipulating csv files, and the numpy library. The course will introduce data manipulation and cleaning techniques using the popular python pandas data science library and introduce the abstraction of the Series and DataFrame as the central data structures for data analysis, along with tutorials on how to use functions such as groupby, merge, and pivot tables effectively. By the end of this course, students will be able to take tabular data, clean it, manipulate it, and run basic inferential statistical analyses. </course_description>
   <course_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">30 hours</course_duration>
   <course_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COURSE021</course_id>
@@ -1285,12 +693,24 @@
   <course_url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.coursera.org/learn/python-data-analysis?specialization=data-science-python</course_url>
 </Course>
 
+<Technology rdf:about="#SKILL041">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL041</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pandas</skill_name>
+</Technology>
+
+<Technology rdf:about="#SKILL043">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL043</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Numpy</skill_name>
+</Technology>
+
 <Course rdf:about="#COURSE022">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <provideSkill rdf:resource="#SKILL007"/>
+  <provideSkill rdf:resource="#SKILL042"/>
   <provideSkill rdf:resource="#SKILL044"/>
   <provideSkill rdf:resource="#SKILL045"/>
-  <provideSkill rdf:resource="#SKILL042"/>
   <course_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This course will introduce the learner to information visualization basics, with a focus on reporting and charting using the matplotlib library. The course will start with a design and information literacy perspective, touching on what makes a good and bad visualization, and what statistical measures translate into in terms of visualizations. The second week will focus on the technology used to make visualizations in python, matplotlib, and introduce users to best practices when creating basic charts and how to realize design decisions in the framework. The third week will be a tutorial of functionality available in matplotlib, and demonstrate a variety of basic statistical charts helping learners to identify when a particular method is good for a particular problem. The course will end with a discussion of other forms of structuring and visualizing data. </course_description>
   <course_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20 hours</course_duration>
   <course_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COURSE022</course_id>
@@ -1298,11 +718,29 @@
   <course_url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.coursera.org/learn/python-plotting?specialization=data-science-python</course_url>
 </Course>
 
+<Technology rdf:about="#SKILL042">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL042</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matplotlib</skill_name>
+</Technology>
+
+<Knowledge rdf:about="#SKILL044">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL044</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data Virtualization</skill_name>
+</Knowledge>
+
+<TechnicalSkill rdf:about="#SKILL045">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL045</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data Visualization (DataViz)</skill_name>
+</TechnicalSkill>
+
 <Course rdf:about="#COURSE023">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <provideSkill rdf:resource="#SKILL007"/>
-  <provideSkill rdf:resource="#SKILL046"/>
   <provideSkill rdf:resource="#SKILL013"/>
+  <provideSkill rdf:resource="#SKILL046"/>
   <provideSkill rdf:resource="#SKILL047"/>
   <course_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This course will introduce the learner to applied machine learning, focusing more on the techniques and methods than on the statistics behind these methods. The course will start with a discussion of how machine learning is different than descriptive statistics, and introduce the scikit learn toolkit through a tutorial. The issue of dimensionality of data will be discussed, and the task of clustering data, as well as evaluating those clusters, will be tackled. Supervised approaches for creating predictive models will be described, and learners will be able to apply the scikit learn predictive modelling methods while understanding process issues related to data generalizability (e.g. cross validation, overfitting). The course will end with a look at more advanced techniques, such as building ensembles, and practical limitations of predictive models. By the end of this course, students will be able to identify the difference between a supervised (classification) and unsupervised (clustering) technique, identify which technique they need to apply for a particular dataset and need, engineer features to meet that need, and write python code to carry out an analysis. </course_description>
   <course_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">34 hours</course_duration>
@@ -1311,17 +749,41 @@
   <course_url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.coursera.org/learn/python-machine-learning?specialization=data-science-python</course_url>
 </Course>
 
+<Knowledge rdf:about="#SKILL046">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL046</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Machine Learning (ML) Algorithms</skill_name>
+</Knowledge>
+
+<Technology rdf:about="#SKILL047">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL047</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scikit-Learn</skill_name>
+</Technology>
+
 <Course rdf:about="#COURSE024">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <provideSkill rdf:resource="#SKILL048"/>
-  <provideSkill rdf:resource="#SKILL040"/>
   <provideSkill rdf:resource="#SKILL007"/>
+  <provideSkill rdf:resource="#SKILL040"/>
+  <provideSkill rdf:resource="#SKILL048"/>
   <course_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This course will introduce the learner to text mining and text manipulation basics. The course begins with an understanding of how text is handled by python, the structure of text both to the machine and to humans, and an overview of the nltk framework for manipulating text. The second week focuses on common manipulation needs, including regular expressions (searching for text), cleaning text, and preparing text for use by machine learning processes. The third week will apply basic natural language processing methods to text, and demonstrate how text classification is accomplished. The final week will explore more advanced methods for detecting the topics in documents and grouping them by similarity (topic modelling). </course_description>
   <course_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">29 hours</course_duration>
   <course_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COURSE024</course_id>
   <course_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applied Text Mining in Python</course_name>
   <course_url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.coursera.org/learn/python-text-mining?specialization=data-science-python</course_url>
 </Course>
+
+<TechnicalSkill rdf:about="#SKILL040">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL040</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Text Mining</skill_name>
+</TechnicalSkill>
+
+<Technology rdf:about="#SKILL048">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL048</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Natural Language Toolkit (NLTK)</skill_name>
+</Technology>
 
 <Course rdf:about="#COURSE025">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
@@ -1336,14 +798,20 @@
 
 <Course rdf:about="#COURSE026">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <provideSkill rdf:resource="#SKILL051"/>
   <provideSkill rdf:resource="#SKILL018"/>
+  <provideSkill rdf:resource="#SKILL051"/>
   <course_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">What are some of the most popular data science tools, how do you use them, and what are their features? In this course, you'll learn about Jupyter Notebooks, JupyterLab, RStudio IDE, Git, GitHub, and Watson Studio. You will learn about what each tool is used for, what programming languages they can execute, their features and limitations. With the tools hosted in the cloud on Skills Network Labs, you will be able to test each tool and follow instructions to run simple code in Python, R or Scala. To end the course, you will create a final project with a Jupyter Notebook on IBM Watson Studio and demonstrate your proficiency preparing a notebook, writing Markdown, and sharing your work with your peers.</course_description>
   <course_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17 hours</course_duration>
   <course_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COURSE026</course_id>
   <course_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tools for Data Science</course_name>
   <course_url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.coursera.org/learn/open-source-tools-for-data-science?specialization=introduction-data-science</course_url>
 </Course>
+
+<Technology rdf:about="#SKILL051">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL051</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ipython</skill_name>
+</Technology>
 
 <Course rdf:about="#COURSE027">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
@@ -1356,19 +824,37 @@
   <course_url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.coursera.org/learn/data-science-methodology?specialization=introduction-data-science</course_url>
 </Course>
 
+<Knowledge rdf:about="#SKILL105">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL105</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data Preparation</skill_name>
+</Knowledge>
+
 <Course rdf:about="#COURSE028">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <provideSkill rdf:resource="#SKILL050"/>
   <provideSkill rdf:resource="#SKILL007"/>
-  <provideSkill rdf:resource="#SKILL051"/>
-  <provideSkill rdf:resource="#SKILL049"/>
   <provideSkill rdf:resource="#SKILL010"/>
+  <provideSkill rdf:resource="#SKILL049"/>
+  <provideSkill rdf:resource="#SKILL050"/>
+  <provideSkill rdf:resource="#SKILL051"/>
   <course_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Much of the world's data resides in databases. SQL (or Structured Query Language) is a powerful language which is used for communicating with and extracting data from databases. A working knowledge of databases and SQL is a must if you want to become a data scientist.</course_description>
   <course_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18 hours</course_duration>
   <course_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COURSE028</course_id>
   <course_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Databases and SQL for Data Science with Python</course_name>
   <course_url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.coursera.org/learn/sql-data-science?specialization=introduction-data-science</course_url>
 </Course>
+
+<Knowledge rdf:about="#SKILL049">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL049</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relational Database Management System (RDBMS)</skill_name>
+</Knowledge>
+
+<Knowledge rdf:about="#SKILL050">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL050</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cloud Databases</skill_name>
+</Knowledge>
 
 <Course rdf:about="#COURSE029">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
@@ -1383,9 +869,9 @@
 
 <Course rdf:about="#COURSE030">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <provideSkill rdf:resource="#SKILL035"/>
   <provideSkill rdf:resource="#SKILL007"/>
   <provideSkill rdf:resource="#SKILL008"/>
+  <provideSkill rdf:resource="#SKILL035"/>
   <provideSkill rdf:resource="#SKILL041"/>
   <provideSkill rdf:resource="#SKILL043"/>
   <course_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kickstart your learning of Python for data science, as well as programming in general, with this beginner-friendly introduction to Python. Python is one of the world’s most popular programming languages, and there has never been greater demand for professionals with the ability to apply Python fundamentals to drive business solutions across industries. </course_description>
@@ -1397,11 +883,11 @@
 
 <Course rdf:about="#COURSE031">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <provideSkill rdf:resource="#SKILL035"/>
   <provideSkill rdf:resource="#SKILL007"/>
-  <provideSkill rdf:resource="#SKILL051"/>
   <provideSkill rdf:resource="#SKILL008"/>
+  <provideSkill rdf:resource="#SKILL035"/>
   <provideSkill rdf:resource="#SKILL041"/>
+  <provideSkill rdf:resource="#SKILL051"/>
   <course_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This mini-course is intended to for you to demonstrate foundational Python skills for working with data. The completion of this course involves working on a hands-on project where you will develop a simple dashboard using Python.</course_description>
   <course_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6 hours</course_duration>
   <course_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COURSE031</course_id>
@@ -1411,10 +897,10 @@
 
 <Course rdf:about="#COURSE032">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <provideSkill rdf:resource="#SKILL052"/>
+  <provideSkill rdf:resource="#SKILL004"/>
   <provideSkill rdf:resource="#SKILL019"/>
   <provideSkill rdf:resource="#SKILL045"/>
-  <provideSkill rdf:resource="#SKILL004"/>
+  <provideSkill rdf:resource="#SKILL052"/>
   <provideSkill rdf:resource="#SKILL053"/>
   <course_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This Statistics for Data Science course is designed to introduce you to the basic principles of statistical methods and procedures used for data analysis. After completing this course you will have practical knowledge of crucial topics in statistics including  - data gathering, summarizing data using descriptive statistics, displaying and visualizing data, examining relationships between variables, probability distributions, expected values, hypothesis testing, introduction to ANOVA (analysis of variance), regression and correlation analysis. You will take a hands-on approach to statistical analysis using Python and Jupyter Notebooks – the tools of choice for Data Scientists and Data Analysts. </course_description>
   <course_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12 hours</course_duration>
@@ -1423,18 +909,48 @@
   <course_url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.coursera.org/learn/statistics-for-data-science-python?specialization=data-science-fundamentals-python-sql</course_url>
 </Course>
 
+<Knowledge rdf:about="#SKILL052">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL052</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Probability And Statistics</skill_name>
+</Knowledge>
+
+<Knowledge rdf:about="#SKILL053">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL053</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Basic Descriptive Statistics</skill_name>
+</Knowledge>
+
 <Course rdf:about="#COURSE033">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <provideSkill rdf:resource="#SKILL056"/>
   <provideSkill rdf:resource="#SKILL035"/>
   <provideSkill rdf:resource="#SKILL054"/>
   <provideSkill rdf:resource="#SKILL055"/>
+  <provideSkill rdf:resource="#SKILL056"/>
   <course_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Apache Spark is the de-facto standard for large scale data processing. This is the first course of a series of courses towards the IBM Advanced Data Science Specialization. We strongly believe that is is crucial for success to start learning a scalable data science platform since memory and CPU constraints are to most limiting factors when it comes to building advanced machine learning models.</course_description>
   <course_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20 hours</course_duration>
   <course_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COURSE033</course_id>
   <course_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fundamentals of Scalable Data Science</course_name>
   <course_url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.coursera.org/learn/ds?specialization=advanced-data-science-ibm</course_url>
 </Course>
+
+<Knowledge rdf:about="#SKILL054">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL054</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Internet Of Things (IOT)</skill_name>
+</Knowledge>
+
+<Technology rdf:about="#SKILL055">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL055</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Apache Spark</skill_name>
+</Technology>
+
+<Knowledge rdf:about="#SKILL056">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL056</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Statistics</skill_name>
+</Knowledge>
 
 <Course rdf:about="#COURSE034">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
@@ -1447,12 +963,18 @@
   <course_url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.coursera.org/learn/advanced-machine-learning-signal-processing?specialization=advanced-data-science-ibm</course_url>
 </Course>
 
+<Technology rdf:about="#SKILL121">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL121</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SparkML</skill_name>
+</Technology>
+
 <Course rdf:about="#COURSE035">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <provideSkill rdf:resource="#SKILL013"/>
   <provideSkill rdf:resource="#SKILL032"/>
-  <provideSkill rdf:resource="#SKILL057"/>
   <provideSkill rdf:resource="#SKILL055"/>
+  <provideSkill rdf:resource="#SKILL057"/>
   <course_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&gt;&gt;&gt; By enrolling in this course you agree to the End User License Agreement as set out in the FAQ.  Once enrolled you can access the license in the Resources area &lt;&lt;&lt;</course_description>
   <course_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">24 hours</course_duration>
   <course_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COURSE035</course_id>
@@ -1460,10 +982,16 @@
   <course_url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.coursera.org/learn/ai?specialization=advanced-data-science-ibm</course_url>
 </Course>
 
+<Knowledge rdf:about="#SKILL057">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL057</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Long Short-Term Memory (ISTM)</skill_name>
+</Knowledge>
+
 <Course rdf:about="#COURSE036">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <provideSkill rdf:resource="#SKILL109"/>
   <provideSkill rdf:resource="#SKILL069"/>
+  <provideSkill rdf:resource="#SKILL109"/>
   <course_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This project completer has proven a deep understanding on massive parallel data processing, data exploration and visualization, advanced machine learning and deep learning and how to apply his knowledge in a real-world practical use case where he justifies architectural decisions, proves understanding the characteristics of different algorithms, frameworks and technologies and how they impact model performance and scalability. </course_description>
   <course_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9 hours</course_duration>
   <course_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COURSE036</course_id>
@@ -1471,19 +999,55 @@
   <course_url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.coursera.org/learn/advanced-data-science-capstone?specialization=advanced-data-science-ibm</course_url>
 </Course>
 
+<Knowledge rdf:about="#SKILL069">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL069</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Model Debugging and Evaluation</skill_name>
+</Knowledge>
+
+<TechnicalSkill rdf:about="#SKILL109">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL109</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data Analysis and Modelling</skill_name>
+</TechnicalSkill>
+
 <Course rdf:about="#COURSE037">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <provideSkill rdf:resource="#SKILL062"/>
   <provideSkill rdf:resource="#SKILL063"/>
   <provideSkill rdf:resource="#SKILL064"/>
   <provideSkill rdf:resource="#SKILL065"/>
   <provideSkill rdf:resource="#SKILL066"/>
-  <provideSkill rdf:resource="#SKILL062"/>
   <course_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In the first course of the Practical Data Science Specialization, you will learn foundational concepts for exploratory data analysis (EDA), automated machine learning (AutoML), and text classification algorithms. With Amazon SageMaker Clarify and Amazon SageMaker Data Wrangler, you will analyze a dataset for statistical bias, transform the dataset into machine-readable features, and select the most important features to train a multi-class text classifier. You will then perform automated machine learning (AutoML) to automatically train, tune, and deploy the best text-classification algorithm for the given dataset using Amazon SageMaker Autopilot. Next, you will work with Amazon SageMaker BlazingText, a highly optimized and scalable implementation of the popular FastText algorithm, to train a text classifier with very little code.</course_description>
   <course_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">14 hours</course_duration>
   <course_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COURSE037</course_id>
   <course_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Analyze Datasets and Train ML Models using AutoML</course_name>
   <course_url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.coursera.org/learn/automl-datasets-ml-models?specialization=practical-data-science</course_url>
 </Course>
+
+<Knowledge rdf:about="#SKILL062">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL062</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Automated Machine Learning (AutoML)</skill_name>
+</Knowledge>
+
+<Knowledge rdf:about="#SKILL063">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL063</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Statistical Data Bias Detection</skill_name>
+</Knowledge>
+
+<TechnicalSkill rdf:about="#SKILL064">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL064</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Multi-class Classification with FastText and BlazingText</skill_name>
+</TechnicalSkill>
+
+<Knowledge rdf:about="#SKILL065">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL065</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data ingestion</skill_name>
+</Knowledge>
 
 <Course rdf:about="#COURSE038">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
@@ -1497,6 +1061,18 @@
   <course_url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.coursera.org/learn/ml-pipelines-bert?specialization=practical-data-science</course_url>
 </Course>
 
+<Knowledge rdf:about="#SKILL067">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL067</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ML Pipelines and MLOps</skill_name>
+</Knowledge>
+
+<TechnicalSkill rdf:about="#SKILL068">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL068</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Model Training and Deployment with BERT</skill_name>
+</TechnicalSkill>
+
 <Course rdf:about="#COURSE039">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <provideSkill rdf:resource="#SKILL060"/>
@@ -1508,10 +1084,22 @@
   <course_url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.coursera.org/learn/ml-models-human-in-the-loop-pipelines?specialization=practical-data-science</course_url>
 </Course>
 
+<Knowledge rdf:about="#SKILL060">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL060</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A/B Testing and Model Deployment</skill_name>
+</Knowledge>
+
+<TechnicalSkill rdf:about="#SKILL061">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL061</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data Labeling at Scale</skill_name>
+</TechnicalSkill>
+
 <Course rdf:about="#COURSE040">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <provideSkill rdf:resource="#SKILL070"/>
   <provideSkill rdf:resource="#SKILL005"/>
+  <provideSkill rdf:resource="#SKILL070"/>
   <provideSkill rdf:resource="#SKILL071"/>
   <provideSkill rdf:resource="#SKILL072"/>
   <course_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This course will provide a set of foundational statistical modeling tools for data science. In particular, students will be introduced to methods, theory, and applications of linear statistical models, covering the topics of parameter estimation, residual diagnostics, goodness of fit, and various strategies for variable selection and model comparison. Attention will also be given to the misuse of statistical models and ethical implications of such misuse.</course_description>
@@ -1520,6 +1108,24 @@
   <course_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Modern Regression Analysis in R</course_name>
   <course_url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.coursera.org/learn/modern-regression-analysis-in-r?specialization=statistical-modeling-for-data-science-applications</course_url>
 </Course>
+
+<Knowledge rdf:about="#SKILL070">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL070</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Linear Model</skill_name>
+</Knowledge>
+
+<Knowledge rdf:about="#SKILL071">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL071</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Statistical Model</skill_name>
+</Knowledge>
+
+<Knowledge rdf:about="#SKILL072">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL072</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">regression</skill_name>
+</Knowledge>
 
 <Course rdf:about="#COURSE041">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
@@ -1532,6 +1138,24 @@
   <course_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ANOVA and Experimental Design</course_name>
   <course_url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.coursera.org/learn/anova-and-experimental-design?specialization=statistical-modeling-for-data-science-applications</course_url>
 </Course>
+
+<Knowledge rdf:about="#SKILL073">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL073</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Calculus</skill_name>
+</Knowledge>
+
+<Knowledge rdf:about="#SKILL074">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL074</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">and probability theory.</skill_name>
+</Knowledge>
+
+<Knowledge rdf:about="#SKILL075">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL075</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Linear Algebra</skill_name>
+</Knowledge>
 
 <Course rdf:about="#COURSE042">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
@@ -1570,8 +1194,8 @@
 
 <Course rdf:about="#COURSE045">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <provideSkill rdf:resource="#SKILL030"/>
   <provideSkill rdf:resource="#SKILL029"/>
+  <provideSkill rdf:resource="#SKILL030"/>
   <provideSkill rdf:resource="#SKILL076"/>
   <provideSkill rdf:resource="#SKILL077"/>
   <course_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This is the third course of the Advanced Machine Learning on GCP specialization. In this course,</course_description>
@@ -1581,10 +1205,22 @@
   <course_url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.coursera.org/learn/image-understanding-tensorflow-gcp?specialization=advanced-machine-learning-tensorflow-gcp</course_url>
 </Course>
 
+<Knowledge rdf:about="#SKILL076">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL076</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Estimator</skill_name>
+</Knowledge>
+
+<Knowledge rdf:about="#SKILL077">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL077</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Advanced Machine Learning</skill_name>
+</Knowledge>
+
 <Course rdf:about="#COURSE046">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <provideSkill rdf:resource="#SKILL048"/>
   <provideSkill rdf:resource="#SKILL030"/>
+  <provideSkill rdf:resource="#SKILL048"/>
   <provideSkill rdf:resource="#SKILL123"/>
   <course_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This course is an introduction to sequence models and their applications, including an overview of sequence model architectures and how to handle inputs of variable length.</course_description>
   <course_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15 hours</course_duration>
@@ -1593,11 +1229,17 @@
   <course_url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.coursera.org/learn/sequence-models-tensorflow-gcp?specialization=advanced-machine-learning-tensorflow-gcp</course_url>
 </Course>
 
+<Technology rdf:about="#SKILL123">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL123</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DialogFlow</skill_name>
+</Technology>
+
 <Course rdf:about="#COURSE047">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <provideSkill rdf:resource="#SKILL035"/>
-  <provideSkill rdf:resource="#SKILL018"/>
   <provideSkill rdf:resource="#SKILL005"/>
+  <provideSkill rdf:resource="#SKILL018"/>
+  <provideSkill rdf:resource="#SKILL035"/>
   <provideSkill rdf:resource="#SKILL036"/>
   <course_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In this course you will get an introduction to the main tools and ideas in the data scientist's toolbox. The course gives an overview of the data, questions, and tools that data analysts and data scientists work with. There are two components to this course. The first is a conceptual introduction to the ideas behind turning data into actionable knowledge. The second is a practical introduction to the tools that will be used in the program like version control, markdown, git, GitHub, R, and RStudio.</course_description>
   <course_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18 hours</course_duration>
@@ -1608,10 +1250,10 @@
 
 <Course rdf:about="#COURSE048">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <provideSkill rdf:resource="#SKILL008"/>
-  <provideSkill rdf:resource="#SKILL037"/>
   <provideSkill rdf:resource="#SKILL005"/>
+  <provideSkill rdf:resource="#SKILL008"/>
   <provideSkill rdf:resource="#SKILL036"/>
+  <provideSkill rdf:resource="#SKILL037"/>
   <course_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In this course you will learn how to program in R and how to use R for effective data analysis. You will learn how to install and configure software necessary for a statistical programming environment and describe generic programming language concepts as they are implemented in a high-level statistical language. The course covers practical issues in statistical computing which includes programming in R, reading data into R, accessing R packages, writing R functions, debugging, profiling R code, and organizing and commenting R code. Topics in statistical data analysis will provide working examples.</course_description>
   <course_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">57 hours</course_duration>
   <course_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COURSE048</course_id>
@@ -1621,9 +1263,9 @@
 
 <Course rdf:about="#COURSE049">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <provideSkill rdf:resource="#SKILL005"/>
   <provideSkill rdf:resource="#SKILL020"/>
   <provideSkill rdf:resource="#SKILL038"/>
-  <provideSkill rdf:resource="#SKILL005"/>
   <provideSkill rdf:resource="#SKILL039"/>
   <course_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Before you can work with data you have to get some. This course will cover the basic ways that data can be obtained. The course will cover obtaining data from the web, from APIs, from databases and from colleagues in various formats. It will also cover the basics of data cleaning and how to make data “tidy”. Tidy data dramatically speed downstream data analysis tasks. The course will also cover the components of a complete data set including raw data, processing instructions, codebooks, and processed data. The course will cover the basics needed for collecting, cleaning, and sharing data.</course_description>
   <course_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20 hours</course_duration>
@@ -1634,8 +1276,8 @@
 
 <Course rdf:about="#COURSE050">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <provideSkill rdf:resource="#SKILL023"/>
   <provideSkill rdf:resource="#SKILL005"/>
+  <provideSkill rdf:resource="#SKILL023"/>
   <provideSkill rdf:resource="#SKILL066"/>
   <course_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This course covers the essential exploratory techniques for summarizing data. These techniques are typically applied before formal modeling commences and can help inform the development of more complex statistical models. Exploratory techniques are also important for eliminating or sharpening potential hypotheses about the world that can be addressed by the data. We will cover in detail the plotting systems in R as well as some of the basic principles of constructing data graphics. We will also cover some of the common multivariate statistical techniques used to visualize high-dimensional data.</course_description>
   <course_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">55 hours</course_duration>
@@ -1646,10 +1288,10 @@
 
 <Course rdf:about="#COURSE051">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <provideSkill rdf:resource="#SKILL056"/>
-  <provideSkill rdf:resource="#SKILL008"/>
   <provideSkill rdf:resource="#SKILL007"/>
+  <provideSkill rdf:resource="#SKILL008"/>
   <provideSkill rdf:resource="#SKILL045"/>
+  <provideSkill rdf:resource="#SKILL056"/>
   <course_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In this course, learners will be introduced to the field of statistics, including where data come from, study design, data management, and exploring and visualizing data. Learners will identify different types of data, and learn how to visualize, analyze, and interpret summaries for both univariate and multivariate data. Learners will also be introduced to the differences between probability and non-probability sampling from larger populations, the idea of how sample estimates vary, and how inferences can be made about larger populations based on probability sampling.</course_description>
   <course_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20 hours</course_duration>
   <course_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COURSE051</course_id>
@@ -1659,10 +1301,10 @@
 
 <Course rdf:about="#COURSE052">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <provideSkill rdf:resource="#SKILL079"/>
-  <provideSkill rdf:resource="#SKILL007"/>
   <provideSkill rdf:resource="#SKILL003"/>
   <provideSkill rdf:resource="#SKILL004"/>
+  <provideSkill rdf:resource="#SKILL007"/>
+  <provideSkill rdf:resource="#SKILL079"/>
   <course_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In this course, we will explore basic principles behind using data for estimation and for assessing theories. We will analyze both categorical data and quantitative data, starting with one population techniques and expanding to handle comparisons of two populations. We will learn how to construct confidence intervals. We will also use sample data to assess whether or not a theory about the value of a parameter is consistent with the data. A major focus will be on interpreting inferential results appropriately.  </course_description>
   <course_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">19 hours</course_duration>
   <course_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COURSE052</course_id>
@@ -1670,11 +1312,17 @@
   <course_url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.coursera.org/learn/inferential-statistical-analysis-python?specialization=statistics-with-python</course_url>
 </Course>
 
+<Knowledge rdf:about="#SKILL079">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL079</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence Interval</skill_name>
+</Knowledge>
+
 <Course rdf:about="#COURSE053">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <provideSkill rdf:resource="#SKILL080"/>
   <provideSkill rdf:resource="#SKILL007"/>
   <provideSkill rdf:resource="#SKILL071"/>
+  <provideSkill rdf:resource="#SKILL080"/>
   <provideSkill rdf:resource="#SKILL081"/>
   <course_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In this course, we will expand our exploration of statistical inference techniques by focusing on the science and art of fitting statistical models to data. We will build on the concepts presented in the Statistical Inference course (Course 2) to emphasize the importance of connecting research questions to our data analysis methods. We will also focus on various modeling objectives, including making inference about relationships between variables and generating predictions for future observations.</course_description>
   <course_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15 hours</course_duration>
@@ -1683,11 +1331,23 @@
   <course_url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.coursera.org/learn/fitting-statistical-models-data-python?specialization=statistics-with-python</course_url>
 </Course>
 
+<Knowledge rdf:about="#SKILL080">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL080</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bayesian Statistics</skill_name>
+</Knowledge>
+
+<Knowledge rdf:about="#SKILL081">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL081</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">statistical regression</skill_name>
+</Knowledge>
+
 <Course rdf:about="#COURSE054">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <provideSkill rdf:resource="#SKILL004"/>
   <provideSkill rdf:resource="#SKILL056"/>
   <provideSkill rdf:resource="#SKILL079"/>
-  <provideSkill rdf:resource="#SKILL004"/>
   <provideSkill rdf:resource="#SKILL083"/>
   <course_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This class presents the fundamental probability and statistical concepts used in elementary data analysis. It will be taught at an introductory level for students with junior or senior college-level mathematical training including a working knowledge of calculus. A small amount of linear algebra and programming are useful for the class, but not required.</course_description>
   <course_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">13 hours</course_duration>
@@ -1696,10 +1356,16 @@
   <course_url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.coursera.org/learn/biostatistics?specialization=advanced-statistics-data-science</course_url>
 </Course>
 
+<Knowledge rdf:about="#SKILL083">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL083</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biostatistics</skill_name>
+</Knowledge>
+
 <Course rdf:about="#COURSE055">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <provideSkill rdf:resource="#SKILL056"/>
   <provideSkill rdf:resource="#SKILL004"/>
+  <provideSkill rdf:resource="#SKILL056"/>
   <provideSkill rdf:resource="#SKILL083"/>
   <course_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Learn fundamental concepts in data analysis and statistical inference, focusing on one and two independent samples.</course_description>
   <course_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12 hours</course_duration>
@@ -1710,16 +1376,22 @@
 
 <Course rdf:about="#COURSE056">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <provideSkill rdf:resource="#SKILL056"/>
-  <provideSkill rdf:resource="#SKILL082"/>
   <provideSkill rdf:resource="#SKILL005"/>
+  <provideSkill rdf:resource="#SKILL056"/>
   <provideSkill rdf:resource="#SKILL075"/>
+  <provideSkill rdf:resource="#SKILL082"/>
   <course_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Welcome to the Advanced Linear Models for Data Science Class 1: Least Squares. This class is an introduction to least squares from a linear algebraic and mathematical perspective. Before beginning the class make sure that you have the following:</course_description>
   <course_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8 hours</course_duration>
   <course_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COURSE056</course_id>
   <course_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Advanced Linear Models for Data Science 1: Least Squares</course_name>
   <course_url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.coursera.org/learn/linear-models?specialization=advanced-statistics-data-science</course_url>
 </Course>
+
+<Knowledge rdf:about="#SKILL082">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL082</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Linear Regression</skill_name>
+</Knowledge>
 
 <Course rdf:about="#COURSE057">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
@@ -1734,10 +1406,10 @@
 
 <Course rdf:about="#COURSE058">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <provideSkill rdf:resource="#SKILL007"/>
   <provideSkill rdf:resource="#SKILL032"/>
   <provideSkill rdf:resource="#SKILL084"/>
   <provideSkill rdf:resource="#SKILL087"/>
-  <provideSkill rdf:resource="#SKILL007"/>
   <provideSkill rdf:resource="#SKILL088"/>
   <course_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In the first course of the Deep Learning Specialization, you will study the foundational concept of neural networks and deep learning. </course_description>
   <course_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">23 hours</course_duration>
@@ -1745,6 +1417,24 @@
   <course_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neural Networks and Deep Learning</course_name>
   <course_url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.coursera.org/learn/neural-networks-deep-learning?specialization=deep-learning</course_url>
 </Course>
+
+<TechnicalSkill rdf:about="#SKILL084">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL084</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Artificial Neural Network</skill_name>
+</TechnicalSkill>
+
+<Knowledge rdf:about="#SKILL087">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL087</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Backpropagation</skill_name>
+</Knowledge>
+
+<Knowledge rdf:about="#SKILL088">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL088</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neural Network Architecture</skill_name>
+</Knowledge>
 
 <Course rdf:about="#COURSE059">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
@@ -1759,11 +1449,23 @@
   <course_url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.coursera.org/learn/deep-neural-network?specialization=deep-learning</course_url>
 </Course>
 
+<Knowledge rdf:about="#SKILL089">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL089</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mathematical Optimization</skill_name>
+</Knowledge>
+
+<Knowledge rdf:about="#SKILL090">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL090</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hyperparameter tuning</skill_name>
+</Knowledge>
+
 <Course rdf:about="#COURSE060">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <provideSkill rdf:resource="#SKILL013"/>
   <provideSkill rdf:resource="#SKILL032"/>
   <provideSkill rdf:resource="#SKILL091"/>
-  <provideSkill rdf:resource="#SKILL013"/>
   <course_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In the third course of the Deep Learning Specialization, you will learn how to build a successful machine learning project and get to practice decision-making as a machine learning project leader. </course_description>
   <course_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6 hours</course_duration>
   <course_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COURSE060</course_id>
@@ -1771,11 +1473,17 @@
   <course_url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.coursera.org/learn/machine-learning-projects?specialization=deep-learning</course_url>
 </Course>
 
+<Knowledge rdf:about="#SKILL091">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL091</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inductive Transfer</skill_name>
+</Knowledge>
+
 <Course rdf:about="#COURSE061">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <provideSkill rdf:resource="#SKILL032"/>
   <provideSkill rdf:resource="#SKILL029"/>
   <provideSkill rdf:resource="#SKILL030"/>
+  <provideSkill rdf:resource="#SKILL032"/>
   <course_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In the fourth course of the Deep Learning Specialization, you will understand how computer vision has evolved and become familiar with its exciting applications such as autonomous driving, face recognition, reading radiology images, and more.</course_description>
   <course_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">35 hours</course_duration>
   <course_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COURSE061</course_id>
@@ -1785,9 +1493,9 @@
 
 <Course rdf:about="#COURSE062">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <provideSkill rdf:resource="#SKILL035"/>
   <provideSkill rdf:resource="#SKILL008"/>
   <provideSkill rdf:resource="#SKILL013"/>
+  <provideSkill rdf:resource="#SKILL035"/>
   <course_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">By now you have definitely heard about data science and big data. In this one-week class, we will provide a crash course in what these terms mean and how they play a role in successful organizations. This class is for anyone who wants to learn what all the data science action is about, including those who will eventually need to manage data scientists. The goal is to get you up to speed as quickly as possible on data science without all the fluff. We've designed this course to be as convenient as possible without sacrificing any of the essentials.</course_description>
   <course_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7 hours</course_duration>
   <course_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COURSE062</course_id>
@@ -1808,9 +1516,9 @@
 <Course rdf:about="#COURSE064">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <provideSkill rdf:resource="#SKILL008"/>
+  <provideSkill rdf:resource="#SKILL066"/>
   <provideSkill rdf:resource="#SKILL093"/>
   <provideSkill rdf:resource="#SKILL095"/>
-  <provideSkill rdf:resource="#SKILL066"/>
   <course_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This one-week course describes the process of analyzing data and how to manage that process. We describe the iterative nature of data analysis and the role of stating a sharp question, exploratory data analysis, inference, formal statistical modeling, interpretation, and communication. In addition, we will describe how to direct analytic activities within a team and to drive the data analysis process towards coherent and useful results. </course_description>
   <course_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9 hours</course_duration>
   <course_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COURSE064</course_id>
@@ -1818,11 +1526,23 @@
   <course_url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.coursera.org/learn/managing-data-analysis?specialization=executive-data-science</course_url>
 </Course>
 
+<Knowledge rdf:about="#SKILL093">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL093</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Communication</skill_name>
+</Knowledge>
+
+<Knowledge rdf:about="#SKILL095">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL095</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Interpretation</skill_name>
+</Knowledge>
+
 <Course rdf:about="#COURSE065">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <provideSkill rdf:resource="#SKILL056"/>
-  <provideSkill rdf:resource="#SKILL035"/>
   <provideSkill rdf:resource="#SKILL008"/>
+  <provideSkill rdf:resource="#SKILL035"/>
+  <provideSkill rdf:resource="#SKILL056"/>
   <provideSkill rdf:resource="#SKILL092"/>
   <course_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Have you ever had the perfect data science experience? The data pull went perfectly. There were no merging errors or missing data. Hypotheses were clearly defined prior to analyses. Randomization was performed for the treatment of interest. The analytic plan was outlined prior to analysis and followed exactly. The conclusions were clear and actionable decisions were obvious. Has that every happened to you? Of course not. Data analysis in real life is messy. How does one manage a team facing real data analyses? In this one-week course, we contrast the ideal with what happens in real life. By contrasting the ideal, you will learn key concepts that will help you manage real life analyses. </course_description>
   <course_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7 hours</course_duration>
@@ -1830,6 +1550,12 @@
   <course_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data Science in Real Life</course_name>
   <course_url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.coursera.org/learn/real-life-data-science?specialization=executive-data-science</course_url>
 </Course>
+
+<Knowledge rdf:about="#SKILL092">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL092</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data Management</skill_name>
+</Knowledge>
 
 <Course rdf:about="#COURSE066">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
@@ -1843,6 +1569,30 @@
   <course_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Intro to Analytic Thinking, Data Science, and Data Mining</course_name>
   <course_url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.coursera.org/learn/intro-analyticthinking-datascience-datamining?specialization=data-science-fundamentals</course_url>
 </Course>
+
+<Knowledge rdf:about="#SKILL096">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL096</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Environmental Data Analysis</skill_name>
+</Knowledge>
+
+<TechnicalSkill rdf:about="#SKILL097">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL097</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data Documentation</skill_name>
+</TechnicalSkill>
+
+<Knowledge rdf:about="#SKILL098">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL098</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Geophysical Data</skill_name>
+</Knowledge>
+
+<TechnicalSkill rdf:about="#SKILL099">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL099</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data Mining</skill_name>
+</TechnicalSkill>
 
 <Course rdf:about="#COURSE067">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
@@ -1878,10 +1628,10 @@
 
 <Course rdf:about="#COURSE070">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <provideSkill rdf:resource="#SKILL082"/>
   <provideSkill rdf:resource="#SKILL101"/>
   <provideSkill rdf:resource="#SKILL105"/>
   <provideSkill rdf:resource="#SKILL106"/>
-  <provideSkill rdf:resource="#SKILL082"/>
   <course_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Welcome to Introduction to Predictive Modeling, the first course in the University of Minnesota’s Analytics for Decision Making specialization.</course_description>
   <course_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12 hours</course_duration>
   <course_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COURSE070</course_id>
@@ -1889,11 +1639,23 @@
   <course_url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.coursera.org/learn/introduction-to-predictive-modeling?specialization=analytics-for-decision-making</course_url>
 </Course>
 
+<Knowledge rdf:about="#SKILL101">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL101</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Predictive Analytics</skill_name>
+</Knowledge>
+
+<Knowledge rdf:about="#SKILL106">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL106</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Time Series Forecasting</skill_name>
+</Knowledge>
+
 <Course rdf:about="#COURSE071">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <provideSkill rdf:resource="#SKILL107"/>
-  <provideSkill rdf:resource="#SKILL104"/>
   <provideSkill rdf:resource="#SKILL089"/>
+  <provideSkill rdf:resource="#SKILL104"/>
+  <provideSkill rdf:resource="#SKILL107"/>
   <course_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In this data-driven world, companies are often interested in knowing what is the "best" course of action, given the data. For example, manufacturers need to decide how many units of a product to produce given the estimated demand and raw material availability? Should they make all the products in-house or buy some from a third-party to meet the demand? Prescriptive Analytics is the branch of analytics that can provide answers to these questions. It is used for prescribing data-based decisions. The most important method in the prescriptive analytics toolbox is optimization. This course will introduce students to the basic principles of linear optimization for decision-making. Using practical examples, this course teaches how to convert a problem scenario into a mathematical model that can be solved to get the best business outcome. We will learn to identify decision variables, objective function, and constraints of a problem, and use them to formulate and solve an optimization problem using Excel solver and spreadsheet.</course_description>
   <course_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">14 hours</course_duration>
   <course_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COURSE071</course_id>
@@ -1901,11 +1663,23 @@
   <course_url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.coursera.org/learn/optimization-for-decision-making?specialization=analytics-for-decision-making</course_url>
 </Course>
 
+<TechnicalSkill rdf:about="#SKILL104">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL104</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Linear Programming (LP)</skill_name>
+</TechnicalSkill>
+
+<Knowledge rdf:about="#SKILL107">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL107</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Analytics</skill_name>
+</Knowledge>
+
 <Course rdf:about="#COURSE072">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <provideSkill rdf:resource="#SKILL107"/>
-  <provideSkill rdf:resource="#SKILL104"/>
   <provideSkill rdf:resource="#SKILL089"/>
+  <provideSkill rdf:resource="#SKILL104"/>
+  <provideSkill rdf:resource="#SKILL107"/>
   <course_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Business analysts need to be able to prescribe optimal solution to problems. But analytics courses are often focused on training students in data analysis and visualization, not so much in helping them figure out how to take the available data and pair that with the right mathematical model to formulate a solution. This course is designed to connect data and models to real world decision-making scenarios in manufacturing, supply chain, finance, human resource management, etc. In particular, we understand how linear optimization - a prescriptive analytics method - can be used to formulate decision problems and provide data-based optimal solutions. Throughout this course we will work on applied problems in different industries, such as:</course_description>
   <course_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">14 hours</course_duration>
   <course_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COURSE072</course_id>
@@ -1923,10 +1697,16 @@
   <course_url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.coursera.org/learn/simulation-models-for-decision-making?specialization=analytics-for-decision-making</course_url>
 </Course>
 
+<Knowledge rdf:about="#SKILL102">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL102</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Monte Carlo Method</skill_name>
+</Knowledge>
+
 <Course rdf:about="#COURSE074">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <provideSkill rdf:resource="#SKILL035"/>
   <provideSkill rdf:resource="#SKILL005"/>
+  <provideSkill rdf:resource="#SKILL035"/>
   <course_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">When working in the data science field you will definitely become acquainted with the R language and the role it plays in data analysis. This course introduces you to the basics of the R language such as data types, techniques for manipulation, and how to implement fundamental programming tasks. </course_description>
   <course_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10 hours</course_duration>
   <course_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COURSE074</course_id>
@@ -1936,9 +1716,9 @@
 
 <Course rdf:about="#COURSE075">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <provideSkill rdf:resource="#SKILL005"/>
   <provideSkill rdf:resource="#SKILL035"/>
   <provideSkill rdf:resource="#SKILL110"/>
-  <provideSkill rdf:resource="#SKILL005"/>
   <course_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Much of the world's data resides in databases. SQL (or Structured Query Language) is a powerful language which is used for communicating with and extracting data from databases. A working knowledge of databases and SQL is a must if you want to become a data scientist.</course_description>
   <course_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">14 hours</course_duration>
   <course_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COURSE075</course_id>
@@ -1946,13 +1726,19 @@
   <course_url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.coursera.org/learn/sql-data-science-r?specialization=applied-data-science-r</course_url>
 </Course>
 
+<Knowledge rdf:about="#SKILL110">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL110</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relational Databases (RDBMS)</skill_name>
+</Knowledge>
+
 <Course rdf:about="#COURSE076">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <provideSkill rdf:resource="#SKILL035"/>
-  <provideSkill rdf:resource="#SKILL111"/>
   <provideSkill rdf:resource="#SKILL005"/>
   <provideSkill rdf:resource="#SKILL008"/>
+  <provideSkill rdf:resource="#SKILL035"/>
   <provideSkill rdf:resource="#SKILL045"/>
+  <provideSkill rdf:resource="#SKILL111"/>
   <course_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The R programming language is purpose-built for data analysis. R is the key that opens the door between the problems that you want to solve with data and the answers you need to meet your objectives.  This course starts with a question and then walks you through the process of answering it through data. You will first learn important techniques for preparing (or wrangling) your data for analysis. You will then learn how to gain a better understanding of your data through exploratory data analysis, helping you to summarize your data and identify relevant relationships between variables that can lead to insights. Once your data is ready to analyze, you will learn how to develop your model and evaluate and tune its performance. By following this process, you can be sure that your data analysis performs to the standards that you have set, and you can have confidence in the results. </course_description>
   <course_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12 hours</course_duration>
   <course_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COURSE076</course_id>
@@ -1960,12 +1746,18 @@
   <course_url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.coursera.org/learn/data-analysis-with-r?specialization=applied-data-science-r</course_url>
 </Course>
 
+<Knowledge rdf:about="#SKILL111">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL111</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Statistical Analysis</skill_name>
+</Knowledge>
+
 <Course rdf:about="#COURSE077">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <provideSkill rdf:resource="#SKILL035"/>
-  <provideSkill rdf:resource="#SKILL008"/>
-  <provideSkill rdf:resource="#SKILL045"/>
   <provideSkill rdf:resource="#SKILL005"/>
+  <provideSkill rdf:resource="#SKILL008"/>
+  <provideSkill rdf:resource="#SKILL035"/>
+  <provideSkill rdf:resource="#SKILL045"/>
   <course_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In this course, you will learn the Grammar of Graphics, a system for describing and building graphs, and how the ggplot2 data visualization package for R applies this concept to basic bar charts, histograms, pie charts, scatter plots, line plots, and box plots. You will also learn how to further customize your charts and plots using themes and other techniques. You will then learn how to use another data visualization package for R called Leaflet to create map plots, a unique way to plot data based on geolocation data. Finally, you will be introduced to creating interactive dashboards using the R Shiny package. You will learn how to create and customize Shiny apps, alter the appearance of the apps by adding HTML and image components, and deploy your interactive data apps on the web.</course_description>
   <course_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9 hours</course_duration>
   <course_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COURSE077</course_id>
@@ -1975,10 +1767,10 @@
 
 <Course rdf:about="#COURSE078">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <provideSkill rdf:resource="#SKILL035"/>
   <provideSkill rdf:resource="#SKILL008"/>
-  <provideSkill rdf:resource="#SKILL016"/>
   <provideSkill rdf:resource="#SKILL010"/>
+  <provideSkill rdf:resource="#SKILL016"/>
+  <provideSkill rdf:resource="#SKILL035"/>
   <course_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">As data collection has increased exponentially, so has the need for people skilled at using and interacting with data; to be able to think critically, and provide insights to make better decisions and optimize their businesses. This is a data scientist, “part mathematician, part computer scientist, and part trend spotter” (SAS Institute, Inc.). According to Glassdoor, being a data scientist is the best job in America; with a median base salary of $110,000 and thousands of job openings at a time. The skills necessary to be a good data scientist include being able to retrieve and work with data, and to do that you need to be well versed in SQL, the standard language for communicating with database systems.</course_description>
   <course_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">14 hours</course_duration>
   <course_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COURSE078</course_id>
@@ -1989,8 +1781,8 @@
 <Course rdf:about="#COURSE079">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <provideSkill rdf:resource="#SKILL008"/>
-  <provideSkill rdf:resource="#SKILL101"/>
   <provideSkill rdf:resource="#SKILL010"/>
+  <provideSkill rdf:resource="#SKILL101"/>
   <course_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This course allows you to apply the SQL skills taught in “SQL for Data Science” to four increasingly complex and authentic data science inquiry case studies. We'll learn how to convert timestamps of all types to common formats and perform date/time calculations. We'll select and perform the optimal JOIN for a data science inquiry and clean data within an analysis dataset by deduping, running quality checks, backfilling, and handling nulls. We'll learn how to segment and analyze data per segment using windowing functions and use case statements to execute conditional logic to address a data science inquiry. We'll also describe how to convert a query into a scheduled job and how to insert data into a date partition. Finally, given a predictive analysis need, we'll engineer a feature from raw data using the tools and skills we've built over the course. The real-world application of these skills will give you the framework for performing the analysis of an AB test.</course_description>
   <course_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">16 hours</course_duration>
   <course_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COURSE079</course_id>
@@ -2000,9 +1792,9 @@
 
 <Course rdf:about="#COURSE080">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <provideSkill rdf:resource="#SKILL010"/>
   <provideSkill rdf:resource="#SKILL035"/>
   <provideSkill rdf:resource="#SKILL055"/>
-  <provideSkill rdf:resource="#SKILL010"/>
   <course_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This course is all about big data. It’s for students with SQL experience that want to take the next step on their data journey by learning distributed computing using Apache Spark. Students will gain a thorough understanding of this open-source standard for working with large datasets. Students will gain an understanding of the fundamentals of data analysis using SQL on Spark, setting the foundation for how to combine data with advanced analytics at scale and in production environments. The four modules build on one another and by the end of the course you will understand: the Spark architecture, queries within Spark, common ways to optimize Spark SQL, and how to build reliable data pipelines. </course_description>
   <course_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">14 hours</course_duration>
   <course_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COURSE080</course_id>
@@ -2033,10 +1825,22 @@
   <course_url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.coursera.org/learn/introduction-to-machine-learning-in-production?specialization=machine-learning-engineering-for-production-mlops</course_url>
 </Course>
 
+<TechnicalSkill rdf:about="#SKILL116">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL116</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Model baseline</skill_name>
+</TechnicalSkill>
+
+<Knowledge rdf:about="#SKILL117">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL117</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ML Deployment Challenges</skill_name>
+</Knowledge>
+
 <Course rdf:about="#COURSE083">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <provideSkill rdf:resource="#SKILL118"/>
   <provideSkill rdf:resource="#SKILL029"/>
+  <provideSkill rdf:resource="#SKILL118"/>
   <course_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In the second course of Machine Learning Engineering for Production Specialization, you will build data pipelines by gathering, cleaning, and validating datasets and assessing data quality; implement feature engineering, transformation, and selection with TensorFlow Extended and get the most predictive power out of your data; and establish the data lifecycle by leveraging data lineage and provenance metadata tools and follow data evolution with enterprise data schemas.</course_description>
   <course_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20 hours</course_duration>
   <course_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COURSE083</course_id>
@@ -2044,10 +1848,16 @@
   <course_url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.coursera.org/learn/machine-learning-data-lifecycle-in-production?specialization=machine-learning-engineering-for-production-mlops</course_url>
 </Course>
 
+<Knowledge rdf:about="#SKILL118">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL118</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ML Metadata</skill_name>
+</Knowledge>
+
 <Course rdf:about="#COURSE084">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <provideSkill rdf:resource="#SKILL062"/>
   <provideSkill rdf:resource="#SKILL025"/>
+  <provideSkill rdf:resource="#SKILL062"/>
   <course_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In the third course of Machine Learning Engineering for Production Specialization, you will build models for different serving environments; implement tools and techniques to effectively manage your modeling resources and best serve offline and online inference requests; and use analytics tools and performance metrics to address model fairness, explainability issues, and mitigate bottlenecks.</course_description>
   <course_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">25 hours</course_duration>
   <course_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COURSE084</course_id>
@@ -2077,10 +1887,16 @@
   <course_url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.coursera.org/learn/discrete-math-and-analyzing-social-graphs?specialization=mathematics-for-data-science</course_url>
 </Course>
 
+<Knowledge rdf:about="#SKILL124">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL124</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Graph</skill_name>
+</Knowledge>
+
 <Course rdf:about="#COURSE087">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <provideSkill rdf:resource="#SKILL075"/>
   <provideSkill rdf:resource="#SKILL013"/>
+  <provideSkill rdf:resource="#SKILL075"/>
   <course_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hi! Our course aims to provide necessary background in Calculus sufficient for up-following Data Science courses. </course_description>
   <course_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">32 hours</course_duration>
   <course_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COURSE087</course_id>
@@ -2090,8 +1906,8 @@
 
 <Course rdf:about="#COURSE088">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <provideSkill rdf:resource="#SKILL075"/>
   <provideSkill rdf:resource="#SKILL013"/>
+  <provideSkill rdf:resource="#SKILL075"/>
   <course_description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The main goal of the course is to explain the main concepts of linear algebra that are used in data analysis and machine learning. Another goal is to improve the student’s practical skills of using linear algebra methods in machine learning and data analysis. You will learn the fundamentals of working with data in vector and matrix form, acquire skills for solving systems of linear algebraic equations and finding the basic matrix decompositions and general understanding of their applicability.</course_description>
   <course_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">21 hours</course_duration>
   <course_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COURSE088</course_id>
@@ -2122,6 +1938,24 @@
   <course_url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.coursera.org/learn/html</course_url>
 </Course>
 
+<Knowledge rdf:about="#SKILL125">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL125</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Web Design</skill_name>
+</Knowledge>
+
+<Technology rdf:about="#SKILL126">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL126</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HTML</skill_name>
+</Technology>
+
+<Knowledge rdf:about="#SKILL127">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL127</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Web Accessibility</skill_name>
+</Knowledge>
+
 <Course rdf:about="#COURSE091">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <provideSkill rdf:resource="#SKILL128"/>
@@ -2133,6 +1967,18 @@
   <course_url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.coursera.org/learn/javascript</course_url>
 </Course>
 
+<Knowledge rdf:about="#SKILL128">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL128</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Document Object Model (DOM)</skill_name>
+</Knowledge>
+
+<Technology rdf:about="#SKILL129">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL129</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JavaScript</skill_name>
+</Technology>
+
 <Course rdf:about="#COURSE092">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <provideSkill rdf:resource="#SKILL125"/>
@@ -2143,6 +1989,12 @@
   <course_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Introduction to CSS3</course_name>
   <course_url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.coursera.org/learn/introcss</course_url>
 </Course>
+
+<Technology rdf:about="#SKILL130">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL130</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cascading Style Sheets (CCS)</skill_name>
+</Technology>
 
 <LearningPath rdf:about="#LEARNING_PATH_001">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
@@ -2358,10 +2210,109 @@
   <learning_path_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LEARNING_PATH_025</learning_path_id>
 </LearningPath>
 
+<TechnicalSkill rdf:about="#SKILL058">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL058</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Natural Language Processing with BERT</skill_name>
+</TechnicalSkill>
+
+<TechnicalSkill rdf:about="#SKILL059">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL059</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ML Pipelines and ML Operations (MLOps)</skill_name>
+</TechnicalSkill>
+
+<Knowledge rdf:about="#SKILL078">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL078</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Statistical inference methods</skill_name>
+</Knowledge>
+
+<TechnicalSkill rdf:about="#SKILL085">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL085</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Recurrent Neural Network</skill_name>
+</TechnicalSkill>
+
+<Knowledge rdf:about="#SKILL086">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL086</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transformers</skill_name>
+</Knowledge>
+
+<Knowledge rdf:about="#SKILL094">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL094</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Leadership</skill_name>
+</Knowledge>
+
+<Knowledge rdf:about="#SKILL100">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL100</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Business Analytics</skill_name>
+</Knowledge>
+
+<Knowledge rdf:about="#SKILL103">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL103</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Prescriptive Analytics</skill_name>
+</Knowledge>
+
+<TechnicalSkill rdf:about="#SKILL108">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL108</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shiny Dashboards</skill_name>
+</TechnicalSkill>
+
+<Knowledge rdf:about="#SKILL112">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL112</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deployment Pipelines</skill_name>
+</Knowledge>
+
+<Knowledge rdf:about="#SKILL113">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL113</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Model Pipelines</skill_name>
+</Knowledge>
+
+<Knowledge rdf:about="#SKILL114">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL114</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data Pipelines</skill_name>
+</Knowledge>
+
+<TechnicalSkill rdf:about="#SKILL115">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL115</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Machine Learning Engineering for Production</skill_name>
+</TechnicalSkill>
+
+<Knowledge rdf:about="#SKILL119">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL119</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Probability</skill_name>
+</Knowledge>
+
+<Knowledge rdf:about="#SKILL120">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL120</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Discrete Mathematics</skill_name>
+</Knowledge>
+
+<Technology rdf:about="#SKILL122">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <skill_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKILL122</skill_id>
+  <skill_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Google Cloud Platform</skill_name>
+</Technology>
+
 <KnowWho rdf:about="#USER001">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasSkill rdf:resource="#SKILL001"/>
   <hasSkill rdf:resource="#SKILL002"/>
+  <hasSkill rdf:resource="#SKILL009"/>
+  <hasSkill rdf:resource="#SKILL010"/>
+  <hasSkill rdf:resource="#SKILL003"/>
   <user_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">USER001</user_id>
 </KnowWho>
 
@@ -2371,6 +2322,65 @@
   <hasSkill rdf:resource="#SKILL015"/>
   <user_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">USER002</user_id>
 </KnowWho>
+
+<sche:Occupation rdf:about="https://schema.org/OCCUPATION001">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasLearningPath rdf:resource="#LEARNING_PATH_001"/>
+  <hasLearningPath rdf:resource="#LEARNING_PATH_004"/>
+  <hasLearningPath rdf:resource="#LEARNING_PATH_006"/>
+  <hasLearningPath rdf:resource="#LEARNING_PATH_008"/>
+  <hasLearningPath rdf:resource="#LEARNING_PATH_011"/>
+  <hasLearningPath rdf:resource="#LEARNING_PATH_016"/>
+  <hasLearningPath rdf:resource="#LEARNING_PATH_021"/>
+  <hasLearningPath rdf:resource="#LEARNING_PATH_022"/>
+  <hasLearningPath rdf:resource="#LEARNING_PATH_024"/>
+  <requireSkill rdf:resource="#SKILL005"/>
+  <requireSkill rdf:resource="#SKILL007"/>
+  <requireSkill rdf:resource="#SKILL009"/>
+  <requireSkill rdf:resource="#SKILL010"/>
+  <requireSkill rdf:resource="#SKILL013"/>
+  <requireSkill rdf:resource="#SKILL049"/>
+  <occupation_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OCCUPATION001</occupation_id>
+  <occupation_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data analyst</occupation_name>
+</sche:Occupation>
+
+<sche:Occupation rdf:about="https://schema.org/OCCUPATION002">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasLearningPath rdf:resource="#LEARNING_PATH_002"/>
+  <hasLearningPath rdf:resource="#LEARNING_PATH_003"/>
+  <hasLearningPath rdf:resource="#LEARNING_PATH_005"/>
+  <hasLearningPath rdf:resource="#LEARNING_PATH_007"/>
+  <hasLearningPath rdf:resource="#LEARNING_PATH_009"/>
+  <hasLearningPath rdf:resource="#LEARNING_PATH_010"/>
+  <hasLearningPath rdf:resource="#LEARNING_PATH_012"/>
+  <hasLearningPath rdf:resource="#LEARNING_PATH_013"/>
+  <hasLearningPath rdf:resource="#LEARNING_PATH_014"/>
+  <hasLearningPath rdf:resource="#LEARNING_PATH_015"/>
+  <hasLearningPath rdf:resource="#LEARNING_PATH_017"/>
+  <hasLearningPath rdf:resource="#LEARNING_PATH_018"/>
+  <hasLearningPath rdf:resource="#LEARNING_PATH_019"/>
+  <hasLearningPath rdf:resource="#LEARNING_PATH_020"/>
+  <hasLearningPath rdf:resource="#LEARNING_PATH_023"/>
+  <requireSkill rdf:resource="#SKILL001"/>
+  <requireSkill rdf:resource="#SKILL002"/>
+  <requireSkill rdf:resource="#SKILL003"/>
+  <requireSkill rdf:resource="#SKILL004"/>
+  <requireSkill rdf:resource="#SKILL019"/>
+  <requireSkill rdf:resource="#SKILL025"/>
+  <requireSkill rdf:resource="#SKILL026"/>
+  <occupation_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OCCUPATION002</occupation_id>
+  <occupation_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data scientist</occupation_name>
+</sche:Occupation>
+
+<sche:Occupation rdf:about="https://schema.org/OCCUPATION003">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasLearningPath rdf:resource="#LEARNING_PATH_025"/>
+  <requireSkill rdf:resource="#SKILL126"/>
+  <requireSkill rdf:resource="#SKILL129"/>
+  <requireSkill rdf:resource="#SKILL130"/>
+  <occupation_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OCCUPATION003</occupation_id>
+  <occupation_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Front end developer</occupation_name>
+</sche:Occupation>
 
 
 </rdf:RDF>

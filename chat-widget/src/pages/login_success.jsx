@@ -1,6 +1,7 @@
 import { Card, CardHeader, Typography } from "@material-ui/core";
 import { render } from "@testing-library/react";
-import React, { Component } from "react";
+import React, { Component, useEffect, useState } from "react";
+import { login_window } from "../config";
 
 function renderTitle() {
     return(

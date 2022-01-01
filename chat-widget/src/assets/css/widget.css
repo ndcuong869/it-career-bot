@@ -1,0 +1,11 @@
+/* .conversation-container .replies {
+    display:block
+} */
+
+.conversation-container .replies {
+    display:inline-block;   
+}
+.conversation-container .reply{
+    display:block;
+    text-align: center;
+}

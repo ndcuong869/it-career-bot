@@ -41,11 +41,32 @@ function renderVerifyCheckbox() {
 export default function RegisterPage() {
   const history = useHistory();
   const [isOpenDialog, openDialog] = useState(false);
+  const [skills, setSkills] = useState([])
+  const [username, setUsername] = useState("")
+  const [password, setPassword] = useState("")
+  const [job_title, setJobTitle] = useState("")
+  const [fullname, setFullname] = useState("")
 
   const preventDefault = (event) => {
     event.preventDefault();
     history.push("/login");
   };
+
+  const handleRegister = () => {
+    const data = {
+      "username": username,
+      "password": password,
+      "job_title": job_title,
+      "fullname": fullname,
+      "skills": skills
+    }
+    console.log(data)
+    axios.post(root_url + '/api/register', data).then((response) => {
+      if (response.status === 200) {
+        history.push('/register_success')
+      }
+    })
+  }
 
   const openDialogSkill = () => {
     openDialog(true);
@@ -56,7 +77,7 @@ export default function RegisterPage() {
   };
   return (
     <div className="container-form">
-      <DialogSkill isOpen={isOpenDialog} closeDialog={closeDialogSkill}/>
+      <DialogSkill isOpen={isOpenDialog} closeDialog={closeDialogSkill} setSkills={setSkills}/>
       <Card style={{}}>
         <CardHeader
           title="Register your account"
@@ -90,6 +111,7 @@ export default function RegisterPage() {
                   <OutlinedInput
                     id="outlined-adornment-amount"
                     labelWidth={60}
+                    onChange={(e) => setUsername(e.target.value)}
                     startAdornment={
                       <InputAdornment position="start">
                         <EmailIcon />
@@ -107,6 +129,7 @@ export default function RegisterPage() {
                     id="outlined-adornment-amount"
                     labelWidth={100}
                     type="password"
+                    onChange={(e) => setPassword(e.target.value)}
                     startAdornment={
                       <InputAdornment position="start">
                         <LockIcon />
@@ -146,6 +169,7 @@ export default function RegisterPage() {
                   <OutlinedInput
                     id="outlined-adornment-amount"
                     labelWidth={100}
+                    onChange={(e) => setFullname(e.target.value)}
                     startAdornment={
                       <InputAdornment position="start">
                         <PersonIcon />
@@ -165,6 +189,7 @@ export default function RegisterPage() {
                   <OutlinedInput
                     id="outlined-adornment-amount"
                     labelWidth={100}
+                    onChange={(e) => setJobTitle(e.target.value)}
                     startAdornment={
                       <InputAdornment position="start">
                         <WorkIcon />
@@ -198,6 +223,7 @@ export default function RegisterPage() {
                   width: "260px",
                   height: '50px'
                 }}
+                onClick={handleRegister}
               >
                 Register
               </Button>

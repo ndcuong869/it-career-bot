@@ -79,11 +79,11 @@ export default function LoginPage() {
               <form>
                 <FormControl fullWidth variant="outlined">
                   <InputLabel htmlFor="outlined-adornment-password">
-                    Email
+                    User ID/Email
                   </InputLabel>
                   <OutlinedInput
                     id="outlined-adornment-amount"
-                    labelWidth={60}
+                    labelWidth={120}
                     onChange={updateUsername}
                     startAdornment={
                       <InputAdornment position="start">
@@ -157,15 +157,3 @@ export default function LoginPage() {
   );
 }
 
-var firebaseConfig = {
-  apiKey: "AIzaSyAvoQzCLkd3JY-WN587igZVR9JaJHWaVTA",
-  authDomain: "it-career-bot.firebaseapp.com",
-  databaseURL: "https://it-career-bot-default-rtdb.firebaseio.com",
-  projectId: "it-career-bot",
-  storageBucket: "it-career-bot.appspot.com",
-  messagingSenderId: "586704512898",
-  appId: "1:586704512898:web:7a8f27b35c2d02605c119b",
-  measurementId: "G-P86VYPZBCD",
-};
-// Initialize Firebase
-//firebase.initializeApp(firebaseConfig);

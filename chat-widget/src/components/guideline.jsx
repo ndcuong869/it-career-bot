@@ -40,10 +40,10 @@ export default function Guideline() {
 
   return (
     <div className="container-form">
-      <Card>
+      <Card style={{maxWidth: '1000px'}}>
         <CardHeader
-          title="IT CAREER BOT INSTRUCTION"
-          subheader="Official guideline"
+          title="IT CAREER BOT"
+          subheader="IT Career Bot is a career counseling chatbot that helps students (especially senior students who are about to graduate and work in the labor market) as well as employees (who intend to change their current job) to figure out who they are and what they want on their career path. "
         />
         <div className="main-container" style={{ display: "flex" }}>
           <img
