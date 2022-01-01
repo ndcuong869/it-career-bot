@@ -3,6 +3,12 @@
 
 IT Career Bot is a project for desmontrating how to build a personalized chatbot based on context-aware knowledge base. The chatbot can help students know how to prepare for a new career by providing dynamic learning paths according to user interest and profile.
 
+The source code is structured as the below:
+* **api-server**: Contains Python scripts to run Flask application for serve user requests.
+* **chat-widget**: A ReactJS applications provide an interface that allows user can text and get response from the chatbot.
+* **ontology**: Contains raw data that is collected from different sources (Ex. Edx, Coursera, ...) and scripts for creating career counseling ontology.
+* **survey-analysis**: Contains raw data that is questions is collected from social networks (Quora, Stack overflow, Stack exchange) to understand what user demand need to in a career counseling service. 
+* **rasa**: Contains pipeline configuration and dialog management for intent classification and entity extraction.
 # Installation
 ## Application architecture
 ![alt text](./assets/architecture.png)
